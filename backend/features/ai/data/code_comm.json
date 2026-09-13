@@ -1,0 +1,876 @@
+{
+  "code_de_commerce": {
+    "source": "Code de Commerce",
+    "source_arabe": "المجلة التجارية",
+    "livre": "Livre II - Du fonds de commerce",
+    "livre_arabe": "الكتاب الثاني - الأصل التجاري",
+    "articles": [
+      {
+        "id": "codecommerce_art189",
+        "article": "Article 189",
+        "titre_fr": "Des éléments du fonds de commerce",
+        "titre_ar": "عناصر الأصل التجاري",
+        "concept_fr": "Définition du fonds de commerce",
+        "concept_ar": "تعريف الأصل التجاري",
+        "acteurs": ["tous"],
+        "acteurs_ar": ["الكل"],
+        "resume_fr": "Font partie du fonds de commerce, les biens mobiliers affectés à l'exercice d'une activité commerciale. Le fonds de commerce comprend obligatoirement la clientèle et l'achalandage. Il comprend aussi, sauf dispositions contraires, tous autres biens nécessaires à l'exploitation du fonds, tels que l'enseigne, le nom commercial, le droit au bail, le matériel, l'outillage, les marchandises, les brevets, marques de fabrique, dessins et modèles, droits de propriété littéraire et artistique.",
+        "resume_ar": "يضم الأصل التجاري الأموال المنقولة المخصصة لممارسة نشاط تجاري. يضم الأصل التجاري وجوبا الحرفاء والسمعة. كما يضم، ما لم ينص على خلاف ذلك، كل الأموال الأخرى الضرورية لاستغلال الأصل، مثل اللافتة والاسم التجاري والحق في الإجارة والمعدات والأدوات والسلع وبراءات الاختراع وعلامات الصنع والرسوم والنماذج وحقوق الملكية الأدبية والفنية.",
+        "delais": [],
+        "conditions": [],
+        "consequences": [],
+        "articles_lies": ["codecommerce_art189bis", "codecommerce_art229"],
+        "mots_cles_fr": ["fonds de commerce", "clientèle", "achalandage", "droit au bail", "matériel", "outillage"],
+        "mots_cles_ar": ["الأصل التجاري", "الحرفاء", "السمعة", "الحق في الإجارة", "المعدات", "الأدوات"]
+      },
+      {
+        "id": "codecommerce_art189bis",
+        "article": "Article 189 bis",
+        "titre_fr": "Rédaction des contrats relatifs au fonds de commerce",
+        "titre_ar": "تحرير العقود المتعلقة بالأصل التجاري",
+        "concept_fr": "Intervention obligatoire de l'avocat pour les contrats relatifs au fonds de commerce",
+        "concept_ar": "التدخل الإلزامي للمحامي في عقود الأصل التجاري",
+        "acteurs": ["bailleur", "preneur", "avocat"],
+        "acteurs_ar": ["المكري", "المكتري", "المحامي"],
+        "resume_fr": "Tous les contrats relatifs au fonds de commerce doivent être rédigés par des avocats en exercice non stagiaires. Les actes rédigés par d'autres rédacteurs sont frappés de nullité absolue. Le rédacteur doit mentionner: son identité, qu'il a consulté le registre de commerce et le registre public des nantissements, qu'il a informé les parties de la situation juridique du fonds, et les formalités à accomplir.",
+        "resume_ar": "يجب أن تحرر جميع العقود المتعلقة بالأصل التجاري من قبل محامين مباشرين غير متربصين. الأعمال المحررة من غير هؤلاء تكون باطلة بطلانا مطلقا. يجب على المحرر ذكر: هويته، أنه اطلع على السجل التجاري والسجل العمومي للرهون، أنه أبلغ الأطراف بالوضعية القانونية للأصل، والإجراءات الواجب القيام بها.",
+        "delais": [],
+        "conditions": [
+          {
+            "texte_fr": "Le rédacteur doit être un avocat en exercice non stagiaire",
+            "texte_ar": "يجب أن يكون المحرر محاميا مباشرا غير متربص"
+          },
+          {
+            "texte_fr": "L'avocat doit avoir consulté le registre de commerce et le registre public des nantissements",
+            "texte_ar": "يجب أن يكون المحامي قد اطلع على السجل التجاري والسجل العمومي للرهون"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Les actes rédigés par un autre rédacteur sont frappés de nullité absolue",
+            "texte_ar": "الأعمال المحررة من غير محام مباشر غير متربص تكون باطلة بطلانا مطلقا"
+          },
+          {
+            "texte_fr": "Le rédacteur est responsable à l'égard des parties de toute violation",
+            "texte_ar": "المحرر مسؤول تجاه الأطراف عن أي مخالفة"
+          }
+        ],
+        "articles_lies": ["codecommerce_art189", "codecommerce_art229"],
+        "mots_cles_fr": ["avocat", "nullité absolue", "fonds de commerce", "registre de commerce", "nantissements"],
+        "mots_cles_ar": ["محام", "بطلان مطلق", "الأصل التجاري", "السجل التجاري", "الرهون"]
+      },
+      {
+        "id": "codecommerce_art190",
+        "article": "Article 190",
+        "titre_fr": "De la vente et de la promesse de vente",
+        "titre_ar": "البيع والوعد بالبيع",
+        "concept_fr": "Forme écrite obligatoire pour la vente du fonds de commerce",
+        "concept_ar": "الكتابة شرط في بيع الأصل التجاري",
+        "acteurs": ["vendeur", "acquereur"],
+        "acteurs_ar": ["البائع", "المشتري"],
+        "resume_fr": "Toute vente amiable, promesse de vente, cession de fonds de commerce, attribution par partage ou licitation, apport en société d'un fonds de commerce, doivent être constatés par écrit, à peine de nullité.",
+        "resume_ar": "كل بيع رضائي، وعد بالبيع، تفويت للأصل التجاري، إسناد بطريق القسمة أو المزايدة، إدخال أصل تجاري في شركة، يجب أن يثبت كتابيا وإلا كان باطلا.",
+        "delais": [],
+        "conditions": [
+          {
+            "texte_fr": "La forme écrite est obligatoire",
+            "texte_ar": "الكتابة شرط"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "La vente verbale est nulle",
+            "texte_ar": "البيع الشفوي باطل"
+          }
+        ],
+        "articles_lies": ["codecommerce_art189bis", "codecommerce_art191"],
+        "mots_cles_fr": ["vente", "écrit", "nullité", "fonds de commerce"],
+        "mots_cles_ar": ["بيع", "كتابة", "بطلان", "الأصل التجاري"]
+      },
+      {
+        "id": "codecommerce_art191",
+        "article": "Article 191",
+        "titre_fr": "De la publicité de la vente du fonds de commerce",
+        "titre_ar": "عمومية بيع الأصل التجاري",
+        "concept_fr": "Publicité de la vente du fonds de commerce",
+        "concept_ar": "نشر بيع الأصل التجاري",
+        "acteurs": ["acquereur", "vendeur"],
+        "acteurs_ar": ["المشتري", "البائع"],
+        "resume_fr": "Toute cession de fonds de commerce sera dans la quinzaine de sa date, publiée, à la diligence de l'acquéreur, sous forme d'extraits, dans un journal quotidien et au Journal Officiel de la République tunisienne.",
+        "resume_ar": "يجب نشر كل تفويت للأصل التجاري في أجل خمسة عشر يوما من تاريخه، ببادرة من المشتري، في شكل مقتطفات، في جريدة يومية وفي الرائد الرسمي للجمهورية التونسية.",
+        "delais": [
+          {
+            "duree": "15 jours",
+            "duree_ar": "15 يوما",
+            "evenement_declencheur": "date de la vente",
+            "evenement_declencheur_ar": "تاريخ البيع",
+            "consequence": "Publication dans un journal quotidien et au JORT",
+            "consequence_ar": "النشر في جريدة يومية والرائد الرسمي",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "La vente doit être publiée dans les 15 jours",
+            "texte_ar": "يجب نشر البيع في أجل 15 يوما"
+          },
+          {
+            "texte_fr": "Publication dans un journal quotidien ET au Journal Officiel",
+            "texte_ar": "النشر في جريدة يومية والرائد الرسمي"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "La vente est inopposable aux tiers si elle n'est pas publiée",
+            "texte_ar": "البيع غير نافذ تجاه الغير إذا لم ينشر"
+          }
+        ],
+        "articles_lies": ["codecommerce_art190", "codecommerce_art192"],
+        "mots_cles_fr": ["publicité", "vente", "journal officiel", "quinzaine", "opposition"],
+        "mots_cles_ar": ["نشر", "بيع", "الرائد الرسمي", "خمسة عشر يوما", "تعرض"]
+      },
+      {
+        "id": "codecommerce_art192",
+        "article": "Article 192",
+        "titre_fr": "Du délai d'opposition",
+        "titre_ar": "أجل التعرض",
+        "concept_fr": "Délai d'opposition des créanciers après la vente du fonds de commerce",
+        "concept_ar": "أجل تعرض الدائنين بعد بيع الأصل التجاري",
+        "acteurs": ["acquereur", "vendeur", "creanciers"],
+        "acteurs_ar": ["المشتري", "البائع", "الدائنون"],
+        "resume_fr": "A partir de la vente et jusqu'à l'expiration d'un délai de vingt jours après la publication au Journal Officiel, l'acquéreur est tenu de laisser en dépôt, au domicile élu, un des originaux de l'acte de vente. Si le fonds de commerce fait l'objet de nantissements inscrits, l'acheteur doit dans le même délai notifier par huissier de justice aux créanciers inscrits.",
+        "resume_ar": "من تاريخ البيع وإلى انقضاء أجل عشرين يوما بعد النشر بالرائد الرسمي، يجب على المشتري إيداع أصل من أصول عقد البيع بالمحل المختار. إذا كان الأصل التجاري محل رهون مقيدة، يجب على المشتري في نفس الأجل إعلام الدائنين المقيدين بواسطة عدل منفذ.",
+        "delais": [
+          {
+            "duree": "20 jours",
+            "duree_ar": "20 يوما",
+            "evenement_declencheur": "date de publication au JORT",
+            "evenement_declencheur_ar": "تاريخ النشر بالرائد الرسمي",
+            "consequence": "Délai d'opposition pour les créanciers",
+            "consequence_ar": "أجل التعرض للدائنين",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "L'acquéreur doit conserver l'original de l'acte de vente au domicile élu",
+            "texte_ar": "يجب على المشتري إيداع أصل عقد البيع بالمحل المختار"
+          },
+          {
+            "texte_fr": "En cas de nantissements inscrits, l'acquéreur doit notifier les créanciers par huissier",
+            "texte_ar": "إذا كانت هناك رهون مقيدة، يجب على المشتري إعلام الدائنين بواسطة عدل منفذ"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "L'acquéreur qui paie le vendeur sans respecter le délai de 20 jours n'est pas libéré à l'égard des tiers",
+            "texte_ar": "المشتري الذي يدفع للبائع دون احترام أجل العشرين يوما لا يبرأ تجاه الغير"
+          }
+        ],
+        "articles_lies": ["codecommerce_art191", "codecommerce_art205"],
+        "mots_cles_fr": ["opposition", "créanciers", "huissier", "nantissements", "vingt jours"],
+        "mots_cles_ar": ["تعرض", "دائنون", "عدل منفذ", "رهون", "عشرون يوما"]
+      },
+      {
+        "id": "codecommerce_art205",
+        "article": "Article 205-206",
+        "titre_fr": "Du privilège du vendeur",
+        "titre_ar": "امتياز البائع",
+        "concept_fr": "Privilège du vendeur sur le fonds de commerce",
+        "concept_ar": "امتياز البائع على الأصل التجاري",
+        "acteurs": ["vendeur", "acquereur"],
+        "acteurs_ar": ["البائع", "المشتري"],
+        "resume_fr": "Le privilège du vendeur d'un fonds de commerce n'a lieu que si la vente a été constatée par un acte authentique ou sous seing privé dûment enregistré, et qu'il a été inscrit sur un registre public tenu au greffe du Tribunal. L'inscription doit être prise, à peine de nullité, dans la quinzaine de l'acte de vente.",
+        "resume_ar": "لا يوجد امتياز بائع الأصل التجاري إلا إذا كان البيع مثبتا بعقد رسمي أو عرفي مسجل ومقيدا بسجل عمومي بالمحكمة الابتدائية. يجب أخذ التقييد في أجل خمسة عشر يوما من تاريخ عقد البيع وإلا كان باطلا.",
+        "delais": [
+          {
+            "duree": "15 jours",
+            "duree_ar": "15 يوما",
+            "evenement_declencheur": "date de la vente",
+            "evenement_declencheur_ar": "تاريخ البيع",
+            "consequence": "Inscription du privilège du vendeur",
+            "consequence_ar": "تقييد امتياز البائع",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "La vente doit être constatée par un acte authentique ou sous seing privé dûment enregistré",
+            "texte_ar": "يجب إثبات البيع بعقد رسمي أو عقد عرفي مسجل"
+          },
+          {
+            "texte_fr": "Inscription au greffe du Tribunal dans le ressort duquel le fonds est exploité",
+            "texte_ar": "التقييد بكتابة المحكمة التي يستغل بها الأصل"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Le privilège du vendeur est nul s'il n'est pas inscrit dans les 15 jours",
+            "texte_ar": "امتياز البائع باطل إذا لم يقيد في أجل 15 يوما"
+          }
+        ],
+        "articles_lies": ["codecommerce_art190", "codecommerce_art191"],
+        "mots_cles_fr": ["privilège", "vendeur", "inscription", "greffe", "quinzaine"],
+        "mots_cles_ar": ["امتياز", "بائع", "تقييد", "كتابة المحكمة", "خمسة عشر يوما"]
+      },
+      {
+        "id": "codecommerce_art217",
+        "article": "Article 217-218",
+        "titre_fr": "Des effets de la vente du fonds de commerce - Garantie",
+        "titre_ar": "آثار البيع - الضمان",
+        "concept_fr": "Garantie pour inexactitude des énonciations dans la vente du fonds de commerce",
+        "concept_ar": "ضمان عدم الصحة في بيع الأصل التجاري",
+        "acteurs": ["acquereur", "vendeur"],
+        "acteurs_ar": ["المشتري", "البائع"],
+        "resume_fr": "Le vendeur est tenu de la garantie à raison de l'inexactitude de ses énonciations. L'action doit être intentée par l'acquéreur dans le délai d'une année, à courir de la date de sa prise de possession.",
+        "resume_ar": "البائع ملزم بالضمان بسبب عدم صحة بياناته. يجب على المشتري رفع الدعوى في أجل سنة من تاريخ حيازته.",
+        "delais": [
+          {
+            "duree": "1 an",
+            "duree_ar": "سنة",
+            "evenement_declencheur": "date de prise de possession",
+            "evenement_declencheur_ar": "تاريخ الحيازة",
+            "consequence": "Délai pour intenter l'action en garantie",
+            "consequence_ar": "أجل دعوى الضمان",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Les énonciations du vendeur étaient inexactes",
+            "texte_ar": "بيانات البائع غير صحيحة"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "L'acquéreur a 1 an à compter de la prise de possession pour agir en garantie",
+            "texte_ar": "للمشتري سنة من تاريخ الحيازة لرفع دعوى الضمان"
+          }
+        ],
+        "articles_lies": ["codecommerce_art189", "codecommerce_art190"],
+        "mots_cles_fr": ["garantie", "inexactitude", "acquéreur", "prise de possession", "un an"],
+        "mots_cles_ar": ["ضمان", "عدم الصحة", "المشتري", "الحيازة", "سنة"]
+      },
+      {
+        "id": "codecommerce_art229",
+        "article": "Article 229",
+        "titre_fr": "De la location du fonds de commerce",
+        "titre_ar": "كراء الأصل التجاري",
+        "concept_fr": "Location-gérance du fonds de commerce",
+        "concept_ar": "الوكالة الحرة للأصل التجاري",
+        "acteurs": ["bailleur", "preneur", "creanciers"],
+        "acteurs_ar": ["المكري", "المكتري", "الدائنون"],
+        "resume_fr": "Nonobstant toute clause contraire, tout contrat ou toute convention, par lesquels le propriétaire d'un fonds de commerce en concède totalement ou partiellement la location, sont régis par les dispositions suivantes.",
+        "resume_ar": "رغم كل شرط مخالف، يخضع كل عقد أو اتفاقية يمنح بموجبها مالك الأصل التجاري كراءه كليا أو جزئيا للأحكام التالية.",
+        "delais": [],
+        "conditions": [],
+        "consequences": [],
+        "articles_lies": ["codecommerce_art230", "codecommerce_art231"],
+        "mots_cles_fr": ["location-gérance", "fonds de commerce", "contrat de location"],
+        "mots_cles_ar": ["الوكالة الحرة", "الأصل التجاري", "عقد الكراء"]
+      },
+      {
+        "id": "codecommerce_art230",
+        "article": "Article 230",
+        "titre_fr": "De la location du fonds de commerce",
+        "titre_ar": "كراء الأصل التجاري",
+        "concept_fr": "Obligations du preneur dans la location-gérance",
+        "concept_ar": "التزامات المكتري في الوكالة الحرة",
+        "acteurs": ["preneur"],
+        "acteurs_ar": ["المكتري"],
+        "resume_fr": "Le locataire prend à sa charge l'exploitation moyennant le paiement d'un loyer au propriétaire. Il exploite le fonds à ses risques et périls. Il n'est ni cessionnaire, ni sous-locataire du bail de l'immeuble.",
+        "resume_ar": "يتحمل المكتري الاستغلال مقابل دفع كراء للمالك. يستغل الأصل على مسؤوليته ومخاطره. وهو ليس مفوتا له ولا مكريا من الباطن لعقد كراء العقار.",
+        "delais": [],
+        "conditions": [],
+        "consequences": [],
+        "articles_lies": ["codecommerce_art229", "codecommerce_art231"],
+        "mots_cles_fr": ["locataire", "exploitation", "risques et périls", "loyer"],
+        "mots_cles_ar": ["المكتري", "الاستغلال", "المسؤولية والمخاطر", "الكراء"]
+      },
+      {
+        "id": "codecommerce_art231",
+        "article": "Article 231",
+        "titre_fr": "De la location du fonds de commerce",
+        "titre_ar": "كراء الأصل التجاري",
+        "concept_fr": "Qualité de commerçant du preneur et publicité de la location",
+        "concept_ar": "صفة التاجر للمكتري ونشر عقد الكراء",
+        "acteurs": ["preneur", "bailleur", "creanciers"],
+        "acteurs_ar": ["المكتري", "المكري", "الدائنون"],
+        "resume_fr": "Le locataire a la qualité de commerçant et il est soumis à toutes les obligations qui en découlent. Il doit, en particulier, être inscrit au registre du commerce. Tout contrat de location d'un fonds de commerce sera publié sous forme d'extrait dans un délai de quinze jours à compter de la date de sa conclusion, au Journal Officiel de la République Tunisienne et dans deux journaux quotidiens dont un en langue arabe, avec l'indication des nantissements et des créanciers inscrits s'il y en a. Le loueur est tenu, dans le même délai, soit de se faire inscrire au registre du commerce, soit de faire modifier son inscription personnelle avec la mention expresse de la mise en location.",
+        "resume_ar": "للمكتري صفة التاجر وهو خاضع لكل الالتزامات الناتجة عن ذلك. يجب عليه بصفة خاصة أن يكون مقيدا بالسجل التجاري. يجب نشر كل عقد كراء لأصل تجاري في شكل مقتطف في أجل خمسة عشر يوما من تاريخ إبرامه بالرائد الرسمي للجمهورية التونسية وفي جريدتين يوميتين إحداهما باللغة العربية، مع ذكر الرهون والدائنين المقيدين إن وجدوا. يجب على المكري في نفس الأجل إما تقييد نفسه بالسجل التجاري أو تعديل تقييده الشخصي مع ذكر الكراء صراحة.",
+        "delais": [
+          {
+            "duree": "15 jours",
+            "duree_ar": "15 يوما",
+            "evenement_declencheur": "date de conclusion du contrat de location",
+            "evenement_declencheur_ar": "تاريخ إبرام عقد الكراء",
+            "consequence": "Publication au JORT et dans deux journaux quotidiens",
+            "consequence_ar": "النشر بالرائد الرسمي وجريدتين يوميتين",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Le preneur doit être inscrit au registre du commerce",
+            "texte_ar": "يجب أن يكون المكتري مقيدا بالسجل التجاري"
+          },
+          {
+            "texte_fr": "Publication au JORT et dans deux journaux quotidiens (dont un en arabe)",
+            "texte_ar": "النشر بالرائد الرسمي وجريدتين يوميتين (إحداهما بالعربية)"
+          },
+          {
+            "texte_fr": "Le loueur doit s'inscrire ou modifier son inscription avec mention de la mise en location",
+            "texte_ar": "يجب على المكري التقييد أو تعديل تقييده مع ذكر الكراء"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Le preneur a la qualité de commerçant et est soumis à toutes les obligations des commerçants",
+            "texte_ar": "للمكتري صفة التاجر وهو خاضع لكل التزامات التاجر"
+          }
+        ],
+        "articles_lies": ["codecommerce_art229", "codecommerce_art232", "codecommerce_art234"],
+        "mots_cles_fr": ["location-gérance", "publication", "registre du commerce", "nantissements", "quinzaine"],
+        "mots_cles_ar": ["الوكالة الحرة", "نشر", "السجل التجاري", "رهون", "خمسة عشر يوما"]
+      },
+      {
+        "id": "codecommerce_art232",
+        "article": "Article 232",
+        "titre_fr": "Mention de la qualité de locataire",
+        "titre_ar": "ذكر صفة المكتري",
+        "concept_fr": "Obligation pour le preneur de mentionner sa qualité sur les documents",
+        "concept_ar": "التزام المكتري بذكر صفته في الوثائق",
+        "acteurs": ["preneur"],
+        "acteurs_ar": ["المكتري"],
+        "resume_fr": "Le locataire est tenu d'indiquer sur tous les documents relatifs à son activité commerciale, tels que lettres, bons de commande, factures, sa qualité de locataire du fonds. Toute infraction sera punie d'une amende civile de cinq à dix dinars.",
+        "resume_ar": "يجب على المكتري ذكر صفته كمكتري للأصل في كل الوثائق المتعلقة بنشاطه التجاري مثل الرسائل وبطاقات الطلب والفواتير. كل مخالفة تعاقب بخطية مدنية من خمسة إلى عشرة دنانير.",
+        "delais": [],
+        "conditions": [
+          {
+            "texte_fr": "Le preneur doit mentionner 'locataire du fonds' sur tous les documents commerciaux",
+            "texte_ar": "يجب على المكتري ذكر 'مكتري الأصل' في كل الوثائق التجارية"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Amende civile de 5 à 10 dinars",
+            "texte_ar": "خطية مدنية من 5 إلى 10 دنانير"
+          }
+        ],
+        "articles_lies": ["codecommerce_art229", "codecommerce_art231"],
+        "mots_cles_fr": ["locataire", "documents", "factures", "amende"],
+        "mots_cles_ar": ["مكتري", "وثائق", "فواتير", "خطية"]
+      },
+      {
+        "id": "codecommerce_art234",
+        "article": "Article 234",
+        "titre_fr": "Responsabilité solidaire du loueur",
+        "titre_ar": "المسؤولية التضامنية للمكري",
+        "concept_fr": "Responsabilité solidaire du bailleur jusqu'à la publication",
+        "concept_ar": "المسؤولية التضامنية للمكري إلى حين النشر",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Jusqu'à la publication du contrat de location le loueur du fonds est solidairement responsable, avec le locataire, des dettes contractées par celui-ci à l'occasion de l'exploitation du fonds.",
+        "resume_ar": "إلى حين نشر عقد الكراء، يكون مكري الأصل مسؤولا بالتضامن مع المكتري عن الديون المتعاقد عليها من هذا الأخير بمناسبة استغلال الأصل.",
+        "delais": [
+          {
+            "duree": "jusqu'à la publication",
+            "duree_ar": "إلى حين النشر",
+            "evenement_declencheur": "conclusion du contrat de location",
+            "evenement_declencheur_ar": "إبرام عقد الكراء",
+            "consequence": "Fin de la responsabilité solidaire",
+            "consequence_ar": "انتهاء المسؤولية التضامنية",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Le contrat n'est pas encore publié",
+            "texte_ar": "العقد لم ينشر بعد"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Le bailleur est solidairement responsable avec le preneur des dettes",
+            "texte_ar": "المكري مسؤول بالتضامن مع المكتري عن الديون"
+          }
+        ],
+        "articles_lies": ["codecommerce_art229", "codecommerce_art231"],
+        "mots_cles_fr": ["responsabilité solidaire", "loueur", "locataire", "publication", "dettes"],
+        "mots_cles_ar": ["مسؤولية تضامنية", "مكري", "مكتري", "نشر", "ديون"]
+      },
+      {
+        "id": "codecommerce_art242",
+        "article": "Article 242",
+        "titre_fr": "Notification aux créanciers inscrits",
+        "titre_ar": "إعلام الدائنين المقيدين",
+        "concept_fr": "Obligation pour le propriétaire de notifier les créanciers inscrits avant la résiliation du bail",
+        "concept_ar": "على المالك إعلام الدائنين المقيدين قبل فسخ الكراء",
+        "acteurs": ["bailleur", "creanciers"],
+        "acteurs_ar": ["المالك", "الدائنون"],
+        "resume_fr": "Le propriétaire qui poursuit la résiliation du bail de l'immeuble dans lequel est exploité un fonds de commerce, doit présenter un certificat portant qu'il n'existe aucune inscription ou un état des inscriptions existantes. Si le fonds est grevé d'inscriptions, le propriétaire doit, à peine de nullité de l'action, la notifier par huissier de justice aux créanciers inscrits à leurs domiciles élus. Le jugement ne peut intervenir qu'après un mois écoulé depuis la date de la notification.",
+        "resume_ar": "على المالك الذي يطلب فسخ كراء العقار الذي يستغل به أصل تجاري أن يقدم شهادة بعدم وجود تقييدات أو بيانا بالتقييدات الموجودة. إذا كان الأصل مثقلا بتقييدات، يجب على المالك تحت طائلة بطلان الدعوى إعلام الدائنين المقيدين بواسطة عدل منفذ في محالهم المختارة. لا يمكن إصدار الحكم إلا بعد مرور شهر من تاريخ الإعلام.",
+        "delais": [
+          {
+            "duree": "1 mois",
+            "duree_ar": "شهر",
+            "evenement_declencheur": "date de notification aux créanciers",
+            "evenement_declencheur_ar": "تاريخ الإعلام للدائنين",
+            "consequence": "Possibilité de rendre le jugement",
+            "consequence_ar": "إمكانية إصدار الحكم",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Un fonds de commerce est exploité dans l'immeuble",
+            "texte_ar": "الأصل التجاري مستغل بالعقار"
+          },
+          {
+            "texte_fr": "Le fonds est grevé d'inscriptions (nantissements inscrits)",
+            "texte_ar": "الأصل مثقل بتقييدات (رهون مقيدة)"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "L'action en résiliation est nulle si les créanciers ne sont pas notifiés",
+            "texte_ar": "دعوى الفسخ باطلة إذا لم يتم إعلام الدائنين"
+          },
+          {
+            "texte_fr": "Délai d'un mois avant que le jugement puisse être rendu",
+            "texte_ar": "أجل شهر قبل إمكانية إصدار الحكم"
+          }
+        ],
+        "articles_lies": ["codecommerce_art205", "codecommerce_art229"],
+        "mots_cles_fr": ["créanciers inscrits", "notification", "huissier", "résiliation", "un mois"],
+        "mots_cles_ar": ["دائنون مقيدون", "إعلام", "عدل منفذ", "فسخ", "شهر"]
+      },
+      {
+        "id": "codecommerce_art193",
+        "article": "Article 193",
+        "titre_fr": "De l'opposition au paiement du prix",
+        "titre_ar": "التعرض لدفع الثمن",
+        "concept_fr": "Opposition des créanciers au paiement du prix de vente",
+        "concept_ar": "تعرض الدائنين لدفع ثمن البيع",
+        "acteurs": ["creanciers", "acquereur", "vendeur"],
+        "acteurs_ar": ["الدائنون", "المشتري", "البائع"],
+        "resume_fr": "Dans les vingt jours au plus tard suivant l'insertion au Journal Officiel de la République tunisienne, tout créancier du précédent propriétaire, que sa créance soit ou non exigible, peut former, au domicile élu, par acte extrajudiciaire ou par lettre recommandée avec avis de réception, opposition au paiement du prix. L'opposition, à peine de nullité, énonce le nom et le domicile de l'opposant, le montant et les causes de la créance.",
+        "resume_ar": "في أجل عشرين يوما على أقصى تقدير بعد النشر بالرائد الرسمي للجمهورية التونسية، يمكن لكل دائن للمالك السابق، سواء كانت دينه مستحقة أو غير مستحقة، أن يقدم تعرضا على دفع الثمن بالمحل المختار، بواسطة عقد غير قضائي أو برسالة مضمونة الوصول. ويجب أن يذكر التعرض تحت طائلة البطلان اسم وعنوان المعترض ومبلغ وأسباب الدين.",
+        "delais": [
+          {
+            "duree": "20 jours",
+            "duree_ar": "20 يوما",
+            "evenement_declencheur": "insertion au Journal Officiel",
+            "evenement_declencheur_ar": "النشر بالرائد الرسمي",
+            "consequence": "Formation de l'opposition",
+            "consequence_ar": "تقديم التعرض",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Créancier du précédent propriétaire",
+            "texte_ar": "دائن المالك السابق"
+          },
+          {
+            "texte_fr": "Opposition formée au domicile élu, par acte extrajudiciaire ou lettre recommandée",
+            "texte_ar": "التعرض يقدم بالمحل المختار بعقد غير قضائي أو رسالة مضمونة"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "L'opposition doit énoncer le nom, domicile, montant et causes de la créance, à peine de nullité",
+            "texte_ar": "يجب أن يذكر التعرض الاسم والعنوان والمبلغ وأسباب الدين تحت طائلة البطلان"
+          }
+        ],
+        "articles_lies": ["codecommerce_art192", "codecommerce_art199"],
+        "mots_cles_fr": ["opposition", "paiement du prix", "créanciers", "vingt jours", "nullité"],
+        "mots_cles_ar": ["تعرض", "دفع الثمن", "دائنون", "عشرون يوما", "بطلان"]
+      },
+      {
+        "id": "codecommerce_art199",
+        "article": "Article 199",
+        "titre_fr": "De l'attribution du prix",
+        "titre_ar": "توزيع الثمن",
+        "concept_fr": "Répartition du prix d'acquisition dans les trois mois",
+        "concept_ar": "توزيع ثمن الاقتناء في أجل ثلاثة أشهر",
+        "acteurs": ["acquereur", "creanciers"],
+        "acteurs_ar": ["المشتري", "الدائنون"],
+        "resume_fr": "Tout détenteur du prix d'acquisition d'un fonds de commerce doit en faire la répartition dans les trois mois de la date de l'acte de vente. A l'expiration de ce délai, la partie la plus diligente peut se pourvoir en référé devant le Président du Tribunal du lieu de la situation du fonds, qui ordonnera, soit le dépôt du prix à la Caisse des Dépôts et Consignations, soit la nomination d'un séquestre répartiteur.",
+        "resume_ar": "يجب على كل حائز لثمن اقتناء أصل تجاري أن يقوم بتوزيعه في أجل ثلاثة أشهر من تاريخ عقد البيع. وعند انقضاء هذا الأجل، يمكن للطرف الأكثر نشاطا أن يلجأ إلى القاضي الاستعجالي لدى رئيس المحكمة التي يوجد بدائرتها الأصل، ليأمر إما بإيداع الثمن بصندوق الإيداع والضمان أو بتعيين حارس قضائي موزع.",
+        "delais": [
+          {
+            "duree": "3 mois",
+            "duree_ar": "3 أشهر",
+            "evenement_declencheur": "date de l'acte de vente",
+            "evenement_declencheur_ar": "تاريخ عقد البيع",
+            "consequence": "Répartition du prix",
+            "consequence_ar": "توزيع الثمن",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Détenteur du prix d'acquisition",
+            "texte_ar": "حائز ثمن الاقتناء"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Dépôt du prix à la Caisse des Dépôts et Consignations ou nomination d'un séquestre répartiteur",
+            "texte_ar": "إيداع الثمن بصندوق الإيداع والضمان أو تعيين حارس قضائي موزع"
+          }
+        ],
+        "articles_lies": ["codecommerce_art193", "codecommerce_art204"],
+        "mots_cles_fr": ["attribution du prix", "répartition", "trois mois", "séquestre", "référé"],
+        "mots_cles_ar": ["توزيع الثمن", "تقسيم", "ثلاثة أشهر", "حارس قضائي", "استعجالي"]
+      },
+      {
+        "id": "codecommerce_art204",
+        "article": "Article 204",
+        "titre_fr": "Acquéreur non libéré",
+        "titre_ar": "المشتري غير المبرأ",
+        "concept_fr": "Acquéreur non libéré envers les tiers",
+        "concept_ar": "المشتري غير المبرأ تجاه الغير",
+        "acteurs": ["acquereur", "creanciers"],
+        "acteurs_ar": ["المشتري", "الدائنون"],
+        "resume_fr": "L'acquéreur qui, sans avoir fait les publications dans les formes prescrites, ou qui, soit avant l'expiration du délai de vingt jours soit au mépris des inscriptions ou oppositions, aura versé le prix au vendeur, n'est pas libéré à l'égard des tiers. Il en est de même au cas où l'acquéreur n'aurait pas déposé son contrat au domicile élu conformément à l'article 192 ci-dessus.",
+        "resume_ar": "المشتري الذي لم يقم بالنشر وفقا للصيغ المقررة، أو الذي دفع الثمن للبائع قبل انقضاء أجل العشرين يوما أو تجاهل التقييدات أو التعرضات، لا يعتبر مبرأ تجاه الغير. ويطبق نفس الحكم إذا لم يقم المشتري بإيداع عقده بالمحل المختار طبقا للفصل 192 أعلاه.",
+        "delais": [],
+        "conditions": [
+          {
+            "texte_fr": "Absence de publication dans les formes prescrites",
+            "texte_ar": "عدم النشر وفقا للصيغ المقررة"
+          },
+          {
+            "texte_fr": "Paiement du prix avant l'expiration du délai de 20 jours ou au mépris des inscriptions/oppositions",
+            "texte_ar": "دفع الثمن قبل انقضاء أجل 20 يوما أو تجاهل التقييدات/التعرضات"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "L'acquéreur n'est pas libéré à l'égard des tiers",
+            "texte_ar": "المشتري غير مبرأ تجاه الغير"
+          }
+        ],
+        "articles_lies": ["codecommerce_art192", "codecommerce_art199"],
+        "mots_cles_fr": ["acquéreur", "non libéré", "tiers", "publication", "opposition"],
+        "mots_cles_ar": ["مشتري", "غير مبرأ", "الغير", "نشر", "تعرض"]
+      },
+      {
+        "id": "codecommerce_art220",
+        "article": "Article 220",
+        "titre_fr": "De l'action résolutoire",
+        "titre_ar": "الدعوى الفسخية",
+        "concept_fr": "Action résolutoire pour défaut de paiement du prix",
+        "concept_ar": "الدعوى الفسخية لعدم دفع الثمن",
+        "acteurs": ["vendeur", "acquereur"],
+        "acteurs_ar": ["البائع", "المشتري"],
+        "resume_fr": "A défaut de stipulation expresse dans le contrat de vente, l'action résolutoire pour défaut de paiement du prix s'exercera conformément à l'article 273 du Code des Obligations et des Contrats. L'action est limitée comme le privilège, aux seuls éléments qui ont fait partie de la vente et elle ne peut être exercée au préjudice des tiers après l'extinction du privilège.",
+        "resume_ar": "في غياب شرط صريح في عقد البيع، تمارس الدعوى الفسخية لعدم دفع الثمن طبقا للفصل 273 من مجلة الالتزامات والعقود. وتقتصر الدعوى مثل الامتياز على العناصر التي كانت محل البيع فقط، ولا يمكن ممارستها على حساب الغير بعد انقضاء الامتياز.",
+        "delais": [],
+        "conditions": [
+          {
+            "texte_fr": "Défaut de paiement du prix",
+            "texte_ar": "عدم دفع الثمن"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Résolution de la vente",
+            "texte_ar": "فسخ البيع"
+          },
+          {
+            "texte_fr": "Action limitée aux éléments faisant partie de la vente",
+            "texte_ar": "الدعوى تقتصر على العناصر التي كانت محل البيع"
+          }
+        ],
+        "articles_lies": ["codecommerce_art205", "codecommerce_art222"],
+        "mots_cles_fr": ["action résolutoire", "défaut de paiement", "prix", "résolution"],
+        "mots_cles_ar": ["الدعوى الفسخية", "عدم الدفع", "الثمن", "فسخ"]
+      },
+      {
+        "id": "codecommerce_art222",
+        "article": "Article 222",
+        "titre_fr": "Notification aux créanciers inscrits",
+        "titre_ar": "إعلام الدائنين المقيدين",
+        "concept_fr": "Notification de l'action résolutoire aux créanciers inscrits",
+        "concept_ar": "إعلام الدائنين المقيدين بالدعوى الفسخية",
+        "acteurs": ["vendeur", "creanciers"],
+        "acteurs_ar": ["البائع", "الدائنون"],
+        "resume_fr": "Le vendeur qui exerce l'action résolutoire doit la notifier par acte extrajudiciaire aux créanciers inscrits sur le fonds, aux domiciles élus dans leurs inscriptions. Le jugement ne peut intervenir qu'après un mois écoulé depuis la notification.",
+        "resume_ar": "يجب على البائع الذي يمارس الدعوى الفسخية إعلام الدائنين المقيدين على الأصل بواسطة عقد غير قضائي في محالهم المختارة في تقييداتهم. ولا يمكن إصدار الحكم إلا بعد مرور شهر من تاريخ الإعلام.",
+        "delais": [
+          {
+            "duree": "1 mois",
+            "duree_ar": "شهر",
+            "evenement_declencheur": "notification aux créanciers inscrits",
+            "evenement_declencheur_ar": "الإعلام للدائنين المقيدين",
+            "consequence": "Possibilité de rendre le jugement",
+            "consequence_ar": "إمكانية إصدار الحكم",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Exercice de l'action résolutoire",
+            "texte_ar": "ممارسة الدعوى الفسخية"
+          },
+          {
+            "texte_fr": "Notification par acte extrajudiciaire aux créanciers inscrits",
+            "texte_ar": "الإعلام بواسطة عقد غير قضائي للدائنين المقيدين"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Délai d'un mois avant que le jugement puisse être rendu",
+            "texte_ar": "أجل شهر قبل إمكانية إصدار الحكم"
+          }
+        ],
+        "articles_lies": ["codecommerce_art220", "codecommerce_art242"],
+        "mots_cles_fr": ["notification", "créanciers inscrits", "action résolutoire", "un mois"],
+        "mots_cles_ar": ["إعلام", "دائنون مقيدون", "دعوى فسخية", "شهر"]
+      },
+      {
+        "id": "codecommerce_art227",
+        "article": "Article 227",
+        "titre_fr": "Clause nulle",
+        "titre_ar": "شرط باطل",
+        "concept_fr": "Nullité de la clause de conservation du prix en cas de résolution",
+        "concept_ar": "بطلان شرط الاحتفاظ بالثمن في صورة الفسخ",
+        "acteurs": ["vendeur", "acquereur"],
+        "acteurs_ar": ["البائع", "المشتري"],
+        "resume_fr": "Sera réputée non écrite, dans tout acte constatant une vente de fonds de commerce, la clause suivant laquelle, en cas de résolution, le vendeur conservera tout ou partie du prix payé.",
+        "resume_ar": "يعتبر كأن لم يكن، في كل عقد يثبت بيع أصل تجاري، الشرط الذي يقضي بأن يحتفظ البائع في صورة الفسخ بكل أو بعض الثمن المدفوع.",
+        "delais": [],
+        "conditions": [],
+        "consequences": [
+          {
+            "texte_fr": "Clause réputée non écrite",
+            "texte_ar": "الشرط يعتبر كأن لم يكن"
+          }
+        ],
+        "articles_lies": ["codecommerce_art220", "codecommerce_art205"],
+        "mots_cles_fr": ["clause nulle", "résolution", "prix payé", "vente"],
+        "mots_cles_ar": ["شرط باطل", "فسخ", "الثمن المدفوع", "بيع"]
+      },
+      {
+        "id": "codecommerce_art228bis",
+        "article": "Article 228 bis",
+        "titre_fr": "Nantissements inscrits - Notification aux créanciers",
+        "titre_ar": "الرهون المقيدة - إعلام الدائنين",
+        "concept_fr": "Notification aux créanciers inscrits en cas de nantissements",
+        "concept_ar": "إعلام الدائنين المقيدين في صورة الرهون",
+        "acteurs": ["acquereur", "creanciers"],
+        "acteurs_ar": ["المشتري", "الدائنون"],
+        "resume_fr": "Si le fonds de commerce est grevé de nantissements inscrits, l'acquéreur doit dans un délai de quinze jours à partir de la date du contrat notifier par huissier de justice, aux créanciers inscrits, à leur domicile élu, lors de l'inscription, et ce, au fin d'opposition.",
+        "resume_ar": "إذا كان الأصل التجاري مثقلا برهون مقيدة، يجب على المشتري في أجل خمسة عشر يوما من تاريخ العقد إعلام الدائنين المقيدين بواسطة عدل منفذ في محالهم المختارة عند التقييد، وذلك لغرض التعرض.",
+        "delais": [
+          {
+            "duree": "15 jours",
+            "duree_ar": "15 يوما",
+            "evenement_declencheur": "date du contrat",
+            "evenement_declencheur_ar": "تاريخ العقد",
+            "consequence": "Notification aux créanciers inscrits",
+            "consequence_ar": "إعلام الدائنين المقيدين",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Fonds grevé de nantissements inscrits",
+            "texte_ar": "الأصل مثقل برهون مقيدة"
+          },
+          {
+            "texte_fr": "Notification par huissier de justice aux créanciers inscrits",
+            "texte_ar": "الإعلام بواسطة عدل منفذ للدائنين المقيدين"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Opposition possible des créanciers",
+            "texte_ar": "إمكانية تعرض الدائنين"
+          }
+        ],
+        "articles_lies": ["codecommerce_art192", "codecommerce_art242"],
+        "mots_cles_fr": ["nantissements", "notification", "créanciers inscrits", "huissier", "quinze jours"],
+        "mots_cles_ar": ["رهون", "إعلام", "دائنون مقيدون", "عدل منفذ", "خمسة عشر يوما"]
+      },
+      {
+        "id": "codecommerce_art243",
+        "article": "Article 243",
+        "titre_fr": "De la vente forcée du fonds de commerce",
+        "titre_ar": "البيع الجبري للأصل التجاري",
+        "concept_fr": "Vente forcée du fonds de commerce saisi",
+        "concept_ar": "البيع الجبري للأصل التجاري المحجوز",
+        "acteurs": ["creanciers", "debiteur"],
+        "acteurs_ar": ["الدائنون", "المدين"],
+        "resume_fr": "Tout créancier, qui exerce des poursuites de saisie-exécution et le débiteur, contre lequel elles sont exercées, peuvent demander, devant le Tribunal dans le ressort duquel le fonds est exploité, la vente du fonds de commerce saisi avec le matériel et les marchandises qui en dépendent. Sur la demande du créancier poursuivant le Tribunal ordonne qu'à défaut de paiement dans le délai imparti au débiteur, la vente du fonds aura lieu, à la requête dudit créancier, après l'accomplissement des formalités prescrites par l'article 244.",
+        "resume_ar": "يمكن لكل دائن يمارس دعوى الحجز التنفيذي وللمدين المحجوز عليه أن يطلبا من المحكمة التي يوجد بدائرتها الأصل بيع الأصل التجاري المحجوز مع المعدات والسلع التابعة له. وبناء على طلب الدائن الحاجز، تأمر المحكمة بأنه في حالة عدم الدفع في الأجل الممنوح للمدين، يتم بيع الأصل بطلب من الدائن المذكور بعد استيفاء الإجراءات المقررة بالفصل 244.",
+        "delais": [],
+        "conditions": [
+          {
+            "texte_fr": "Poursuites de saisie-exécution",
+            "texte_ar": "دعوى الحجز التنفيذي"
+          },
+          {
+            "texte_fr": "Demande devant le Tribunal du ressort du fonds",
+            "texte_ar": "الطلب أمام المحكمة التي يوجد بدائرتها الأصل"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Vente du fonds de commerce saisi",
+            "texte_ar": "بيع الأصل التجاري المحجوز"
+          },
+          {
+            "texte_fr": "Nomination éventuelle d'un administrateur provisoire",
+            "texte_ar": "إمكانية تعيين مدير مؤقت"
+          }
+        ],
+        "articles_lies": ["codecommerce_art244", "codecommerce_art245"],
+        "mots_cles_fr": ["vente forcée", "saisie-exécution", "fonds de commerce", "créancier"],
+        "mots_cles_ar": ["بيع جبري", "حجز تنفيذي", "الأصل التجاري", "دائن"]
+      },
+      {
+        "id": "codecommerce_art244",
+        "article": "Article 244",
+        "titre_fr": "Vente par le créancier gagiste",
+        "titre_ar": "البيع من الدائن المرتهن",
+        "concept_fr": "Vente du fonds par le vendeur ou le créancier gagiste",
+        "concept_ar": "بيع الأصل من البائع أو الدائن المرتهن",
+        "acteurs": ["vendeur", "creancier_gagiste", "debiteur"],
+        "acteurs_ar": ["البائع", "الدائن المرتهن", "المدين"],
+        "resume_fr": "Le vendeur et le créancier gagiste, inscrits sur un fonds de commerce, peuvent également faire ordonner la vente du fonds qui constitue leur gage, huit jours après sommation de payer, faite au débiteur et au tiers détenteur, s'il y a lieu, et demeurée infructueuse.",
+        "resume_ar": "يمكن للبائع والدائن المرتهن المقيدين على أصل تجاري أن يأمرا أيضا ببيع الأصل الذي يشكل ضمانتهما، بعد ثمانية أيام من التنبيه بالدفع الموجه للمدين وللحائز الثالث عند الاقتضاء والذي بقي بدون نتيجة.",
+        "delais": [
+          {
+            "duree": "8 jours",
+            "duree_ar": "8 أيام",
+            "evenement_declencheur": "sommation de payer",
+            "evenement_declencheur_ar": "التنبيه بالدفع",
+            "consequence": "Vente du fonds",
+            "consequence_ar": "بيع الأصل",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Vendeur ou créancier gagiste inscrit",
+            "texte_ar": "بائع أو دائن مرتهن مقيد"
+          },
+          {
+            "texte_fr": "Sommation de payer demeurée infructueuse",
+            "texte_ar": "التنبيه بالدفع بقي بدون نتيجة"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Vente forcée du fonds",
+            "texte_ar": "البيع الجبري للأصل"
+          }
+        ],
+        "articles_lies": ["codecommerce_art243", "codecommerce_art245"],
+        "mots_cles_fr": ["créancier gagiste", "vente forcée", "sommation", "huit jours"],
+        "mots_cles_ar": ["دائن مرتهن", "بيع جبري", "تنبيه", "ثمانية أيام"]
+      },
+      {
+        "id": "codecommerce_art245",
+        "article": "Article 245",
+        "titre_fr": "Publicité de la vente forcée",
+        "titre_ar": "نشر البيع الجبري",
+        "concept_fr": "Publicité de la vente du fonds de commerce",
+        "concept_ar": "نشر بيع الأصل التجاري",
+        "acteurs": ["tous"],
+        "acteurs_ar": ["الكل"],
+        "resume_fr": "Le poursuivant fait sommation au propriétaire du fonds et aux créanciers inscrits antérieurement à la décision qui ordonne la vente, aux domiciles élus par eux dans leurs inscriptions, quinze jours au moins avant la vente, de prendre communication du cahier des charges, de fournir leurs dires et observations et d'assister à l'adjudication si bon leur semble. La vente a lieu dix jours au moins après l'approbation d'affiches.",
+        "resume_ar": "يقوم الحاجز بتنبيه مالك الأصل والدائنين المقيدين قبل القرار الذي يأمر بالبيع، في المحال المختارة في تقييداتهم، قبل البيع بخمسة عشر يوما على الأقل، للاطلاع على كراس الشروط وتقديم ملاحظاتهم وحضور المزايدة إن أرادوا. ويتم البيع بعد عشرة أيام على الأقل من المصادقة على الإعلانات.",
+        "delais": [
+          {
+            "duree": "15 jours",
+            "duree_ar": "15 يوما",
+            "evenement_declencheur": "décision ordonnant la vente",
+            "evenement_declencheur_ar": "القرار الآمر بالبيع",
+            "consequence": "Sommation au propriétaire et aux créanciers",
+            "consequence_ar": "تنبيه المالك والدائنين",
+            "prolongeable": false
+          },
+          {
+            "duree": "10 jours",
+            "duree_ar": "10 أيام",
+            "evenement_declencheur": "approbation des affiches",
+            "evenement_declencheur_ar": "المصادقة على الإعلانات",
+            "consequence": "Vente aux enchères",
+            "consequence_ar": "البيع بالمزاد",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Sommation au propriétaire et aux créanciers inscrits",
+            "texte_ar": "تنبيه المالك والدائنين المقيدين"
+          },
+          {
+            "texte_fr": "Apposition d'affiches",
+            "texte_ar": "تعليق الإعلانات"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Vente aux enchères publiques",
+            "texte_ar": "البيع بالمزاد العلني"
+          }
+        ],
+        "articles_lies": ["codecommerce_art243", "codecommerce_art244"],
+        "mots_cles_fr": ["publicité", "vente forcée", "affiches", "enchères", "quinze jours"],
+        "mots_cles_ar": ["نشر", "بيع جبري", "إعلانات", "مزاد", "خمسة عشر يوما"]
+      },
+      {
+        "id": "codecommerce_art467",
+        "article": "Article 467",
+        "titre_fr": "Cahier des charges (location-gérance)",
+        "titre_ar": "كراس الشروط (الوكالة الحرة)",
+        "concept_fr": "Obligations du locataire-gérant dans le cahier des charges",
+        "concept_ar": "التزامات المكتري في كراس الشروط",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Le cahier des charges doit comprendre les conditions de la location ou location-gérance et notamment, les obligations mises à la charge du soumissionnaire, notamment celles relatives aux emplois qu'il s'engage à conserver, et dont la violation entraîne la résolution du contrat, ainsi qu'un état de tous les éléments du fonds de commerce et matériel existant dans les locaux et équipements destinés à son exploitation. Il doit contenir également l'engagement exprès et écrit du locataire de ne pas dissiper les éléments corporels de l'entreprise louée et de ne pas dilapider les éléments incorporels du fonds de commerce et de ne pas les détourner dans son intérêt personnel. Le cahier des charges indique également les échéances des loyers, sans que les intervalles les séparant ne puissent dépasser, dans tous les cas, trois mois.",
+        "resume_ar": "يجب أن يتضمن كراس الشروط شروط الكراء أو الوكالة الحرة، وخاصة الالتزامات الملقاة على عاتق المزايد، بما في ذلك الالتزامات المتعلقة بالوظائف التي يتعهد بالحفاظ عليها، والتي يؤدي خرقها إلى فسخ العقد، وكذلك بيان بجميع عناصر الأصل التجاري والمعدات الموجودة بالمحلات والتجهيزات المخصصة لاستغلاله. ويجب أن يتضمن أيضا التزام المكتري الصريح والكتابي بعدم تبديد العناصر المادية للمؤسسة المكتراة وعدم تبديد العناصر المعنوية للأصل التجاري وعدم تحويلها لفائدته الشخصية. ويشير كراس الشروط أيضا إلى آجال دفع الكراء، دون أن تتجاوز الفواصل بينها في كل الحالات ثلاثة أشهر.",
+        "delais": [
+          {
+            "duree": "3 mois",
+            "duree_ar": "3 أشهر",
+            "evenement_declencheur": "échéances des loyers",
+            "evenement_declencheur_ar": "آجال دفع الكراء",
+            "consequence": "Intervalle maximum entre les paiements",
+            "consequence_ar": "الحد الأقصى للفواصل بين الدفعات",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Engagement écrit du locataire de ne pas dissiper les éléments corporels",
+            "texte_ar": "التزام كتابي من المكتري بعدم تبديد العناصر المادية"
+          },
+          {
+            "texte_fr": "Engagement écrit de ne pas dilapider les éléments incorporels",
+            "texte_ar": "التزام كتابي بعدم تبديد العناصر المعنوية"
+          },
+          {
+            "texte_fr": "Intervalles entre les échéances de loyer ne dépassant pas 3 mois",
+            "texte_ar": "الفواصل بين آجال دفع الكراء لا تتجاوز 3 أشهر"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Violation entraîne la résolution du contrat",
+            "texte_ar": "الخرق يؤدي إلى فسخ العقد"
+          }
+        ],
+        "articles_lies": ["codecommerce_art229", "codecommerce_art230", "codecommerce_art231"],
+        "mots_cles_fr": ["cahier des charges", "location-gérance", "dissipation", "échéances", "trois mois"],
+        "mots_cles_ar": ["كراس الشروط", "الوكالة الحرة", "تبديد", "آجال", "ثلاثة أشهر"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,930 @@
+{
+  "loi_77_37": {
+    "source": "Loi n° 77-37 du 25 mai 1977",
+    "source_arabe": "القانون عدد 37 لسنة 1977",
+    "objet_fr": "Réglant les rapports entre bailleurs et locataires en ce qui concerne le renouvellement des baux d'immeubles ou de locaux à usage commercial, industriel ou artisanal",
+    "objet_ar": "المتعلق بتنظيم العلاقات بين المسوغين والمتسوغين فيما يخص تجديد كراء العقارات أو المحلات ذات الاستعمال التجاري أو الصناعي أو المستعملة في الحرف",
+    "source_officielle": "JORT n° 38 du 31 Mai - 3 Juin 1977",
+    "source_officielle_ar": "الرائد الرسمي عدد 38 بتاريخ 31 ماي - 3 جوان 1977",
+    "articles": [
+      {
+        "id": "loi77_37_art1",
+        "article": "Article 1",
+        "titre_fr": "Champ d'application",
+        "titre_ar": "ميدان التطبيق",
+        "concept_fr": "Application de la loi aux fonds de commerce exploités pendant 2 ans",
+        "concept_ar": "تطبيق القانون على الأصول التجارية المستغلة لمدة عامين",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Les dispositions de la présente loi s'appliquent aux baux des immeubles ou locaux dans lesquels un fonds de commerce est exploité pendant deux années consécutives au moins, que ce fonds appartienne à un commerçant, à un industriel ou à un artisan.",
+        "resume_ar": "تنطبق أحكام هذا القانون على عقود تسويغ العقارات أو المحلات التي يستغل بها ملك تجاري طيلة عامين متتاليين على الأقل، سواء كان الملك التجاري ملكا لتاجر أو صاحب صناعة أو صاحب حرفة.",
+        "delais": [
+          {
+            "duree": "2 ans",
+            "duree_ar": "عامان",
+            "evenement_declencheur": "exploitation continue du fonds",
+            "evenement_declencheur_ar": "الاستغلال المتواصل للأصل",
+            "consequence": "Application de la loi 77-37",
+            "consequence_ar": "تطبيق القانون 77-37",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Exploitation d'un fonds de commerce pendant au moins 2 années consécutives",
+            "texte_ar": "استغلال أصل تجاري لمدة عامين متتاليين على الأقل"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Le preneur bénéficie du droit au renouvellement du bail ou à une indemnité d'éviction",
+            "texte_ar": "يستفيد المكتري من حق تجديد الكراء أو من غرامة الحرمان"
+          }
+        ],
+        "articles_lies": ["loi77_37_art3", "loi77_37_art7"],
+        "mots_cles_fr": ["champ d'application", "fonds de commerce", "deux années", "commerçant"],
+        "mots_cles_ar": ["ميدان التطبيق", "الأصل التجاري", "عامان", "تاجر"]
+      },
+      {
+        "id": "loi77_37_art3",
+        "article": "Article 3",
+        "titre_fr": "Conditions d'application",
+        "titre_ar": "شروط التطبيق",
+        "concept_fr": "Preuve de l'exploitation du fonds",
+        "concept_ar": "إثبات استغلال الأصل",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "La preuve de l'exploitation du fonds de commerce peut être établie par tous moyens, notamment par la production de l'inscription au registre du commerce, des factures, des quittances de loyer, etc.",
+        "resume_ar": "يمكن إثبات استغلال الأصل التجاري بكل الوسائل، خاصة بإنتاج التقييد بالسجل التجاري والفواتير ووصولات دفع الكراء وغيرها.",
+        "delais": [],
+        "conditions": [],
+        "consequences": [],
+        "articles_lies": ["loi77_37_art1"],
+        "mots_cles_fr": ["preuve", "exploitation", "registre de commerce"],
+        "mots_cles_ar": ["إثبات", "استغلال", "السجل التجاري"]
+      },
+      {
+        "id": "loi77_37_art4",
+        "article": "Article 4",
+        "titre_fr": "Forme du congé",
+        "titre_ar": "شكل التنبيه",
+        "concept_fr": "Forme et délai du congé donné par le bailleur",
+        "concept_ar": "شكل وأجل التنبيه بالخروج من المكري",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Les baux soumis à la présente loi ne cessent que par l'effet d'un congé donné dans le délai prévu six mois à l'avance. Le congé doit être donné par exploit d'huissier notaire. Il doit à peine de nullité préciser les motifs pour lesquels il est donné et reproduire les termes de l'article 27.",
+        "resume_ar": "لا تنتهي عقود الكراء الخاضعة لهذا القانون إلا بموجب تنبيه بالخروج يقدم في أجل ستة أشهر مسبقا. يجب أن يبلغ التنبيه بواسطة عدل تنفيذ. ويجب تحت طائلة البطلان ذكر الأسباب التي من أجلها وقع التنبيه وإدراج عبارات الفصل 27.",
+        "delais": [
+          {
+            "duree": "6 mois",
+            "duree_ar": "6 أشهر",
+            "evenement_declencheur": "expiration du bail",
+            "evenement_declencheur_ar": "انتهاء مدة الكراء",
+            "consequence": "Fin du bail",
+            "consequence_ar": "انتهاء الكراء",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Congé donné par exploit d'huissier notaire",
+            "texte_ar": "التنبيه بالخروج يبلغ بواسطة عدل تنفيذ"
+          },
+          {
+            "texte_fr": "Le congé doit préciser les motifs et reproduire les termes de l'article 27",
+            "texte_ar": "يجب أن يذكر التنبيه الأسباب ويدرج عبارات الفصل 27"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Nullité du congé si les formes ne sont pas respectées",
+            "texte_ar": "بطلان التنبيه إذا لم تحترم الشكليات"
+          }
+        ],
+        "articles_lies": ["loi77_37_art5", "loi77_37_art27"],
+        "mots_cles_fr": ["congé", "huissier notaire", "six mois", "nullité", "motifs"],
+        "mots_cles_ar": ["تنبيه بالخروج", "عدل تنفيذ", "ستة أشهر", "بطلان", "أسباب"]
+      },
+      {
+        "id": "loi77_37_art5",
+        "article": "Article 5",
+        "titre_fr": "Demande de renouvellement par le locataire",
+        "titre_ar": "طلب التجديد من المكتري",
+        "concept_fr": "Procédure de demande de renouvellement",
+        "concept_ar": "إجراءات طلب التجديد",
+        "acteurs": ["preneur", "bailleur"],
+        "acteurs_ar": ["المكتري", "المكري"],
+        "resume_fr": "Le locataire qui veut obtenir le renouvellement de son bail doit le demander au propriétaire par exploit d'huissier notaire, soit dans les 6 mois avant l'expiration du bail, soit à tout moment après sa reconduction. Dans les trois mois de la signification de la demande, le bailleur doit faire connaître son refus ou son acceptation. À défaut, il est réputé avoir accepté le renouvellement aux mêmes conditions.",
+        "resume_ar": "يجب على المكتري الذي يريد الحصول على تجديد كرائه أن يطلب ذلك من المالك بواسطة عدل تنفيذ، إما في الأشهر الستة التي تسبق انتهاء الكراء، أو في أي وقت بعد تجديده. وفي أجل ثلاثة أشهر من تاريخ تبليغ الطلب، يجب على المكري إعلامه برفضه أو قبوله. وإلا اعتبر أنه قبل التجديد بنفس الشروط.",
+        "delais": [
+          {
+            "duree": "3 mois",
+            "duree_ar": "3 أشهر",
+            "evenement_declencheur": "signification de la demande de renouvellement",
+            "evenement_declencheur_ar": "تبليغ طلب التجديد",
+            "consequence": "Acceptation tacite si le bailleur ne répond pas",
+            "consequence_ar": "القبول الضمني إذا لم يجب المكري",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Demande par exploit d'huissier notaire",
+            "texte_ar": "الطلب بواسطة عدل تنفيذ"
+          },
+          {
+            "texte_fr": "Demande dans les 6 mois avant expiration ou après reconduction",
+            "texte_ar": "الطلب في الأشهر الستة قبل الانتهاء أو بعد التجديد"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Acceptation tacite du renouvellement si le bailleur ne répond pas dans les 3 mois",
+            "texte_ar": "القبول الضمني للتجديد إذا لم يجب المكري في أجل 3 أشهر"
+          }
+        ],
+        "articles_lies": ["loi77_37_art4", "loi77_37_art27"],
+        "mots_cles_fr": ["renouvellement", "demande", "huissier notaire", "acceptation tacite"],
+        "mots_cles_ar": ["تجديد", "طلب", "عدل تنفيذ", "قبول ضمني"]
+      },
+      {
+        "id": "loi77_37_art6",
+        "article": "Article 6",
+        "titre_fr": "Prise d'effet du nouveau bail",
+        "titre_ar": "بداية مفعول الكراء الجديد",
+        "concept_fr": "Date de prise d'effet du bail renouvelé",
+        "concept_ar": "تاريخ بداية مفعول الكراء المجدد",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Le nouveau bail prendra effet à compter de l'expiration du bail précédent, ou, le cas échéant, de sa reconduction, cette dernière étant soit celle pour laquelle le congé a été donné, soit, si une demande de renouvellement a été faite, le terme de trois mois qui suivra la signification de cette demande.",
+        "resume_ar": "يبدأ مفعول الكراء الجديد من تاريخ انتهاء الكراء السابق، أو عند الاقتضاء من تاريخ تجديده، سواء كان التجديد الذي من أجله وقع التنبيه بالخروج، أو إذا تم تقديم طلب تجديد، من تاريخ انقضاء ثلاثة أشهر بعد تبليغ هذا الطلب.",
+        "delais": [
+          {
+            "duree": "3 mois",
+            "duree_ar": "3 أشهر",
+            "evenement_declencheur": "signification de la demande de renouvellement",
+            "evenement_declencheur_ar": "تبليغ طلب التجديد",
+            "consequence": "Prise d'effet du nouveau bail",
+            "consequence_ar": "بداية مفعول الكراء الجديد",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Demande de renouvellement faite",
+            "texte_ar": "تقديم طلب التجديد"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Le nouveau bail prend effet à l'expiration du précédent ou après le délai de 3 mois",
+            "texte_ar": "يبدأ مفعول الكراء الجديد عند انتهاء السابق أو بعد أجل 3 أشهر"
+          }
+        ],
+        "articles_lies": ["loi77_37_art5", "loi77_37_art7"],
+        "mots_cles_fr": ["prise d'effet", "nouveau bail", "renouvellement", "trois mois"],
+        "mots_cles_ar": ["بداية المفعول", "الكراء الجديد", "التجديد", "ثلاثة أشهر"]
+      },
+      {
+        "id": "loi77_37_art7",
+        "article": "Article 7",
+        "titre_fr": "Refus de renouvellement - Indemnité d'éviction",
+        "titre_ar": "رفض التجديد - غرامة الحرمان",
+        "concept_fr": "Indemnité d'éviction due par le bailleur en cas de refus de renouvellement",
+        "concept_ar": "غرامة الحرمان المستحقة على المكري في صورة رفض التجديد",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Le bailleur peut refuser le renouvellement du bail. Toutefois, le bailleur devra, sauf exceptions prévues aux articles 8 et suivants, payer au locataire évincé une indemnité dite d'éviction égale au préjudice causé par le défaut de renouvellement. Cette indemnité comprend notamment la valeur marchande du fonds de commerce, augmentée des frais normaux de déménagement et de réinstallation.",
+        "resume_ar": "يمكن للمكري رفض تجديد الكراء. لكن يجب عليه، ما عدا الاستثناءات المنصوص عليها بالفصول 8 وما يليها، دفع غرامة تسمى غرامة الحرمان للمكتري المحروم تعادل الضرر الحاصل بسبب عدم التجديد. وتشمل هذه الغرامة بالخصوص قيمة الأصل التجاري عند التعامل مضافا إليها مصاريف النقل والانتزاع العادية.",
+        "delais": [],
+        "conditions": [],
+        "consequences": [
+          {
+            "texte_fr": "Paiement d'une indemnité d'éviction au preneur évincé",
+            "texte_ar": "دفع غرامة حرمان للمكتري المحروم"
+          }
+        ],
+        "articles_lies": ["loi77_37_art8", "loi77_37_art19"],
+        "mots_cles_fr": ["refus de renouvellement", "indemnité d'éviction", "valeur du fonds de commerce"],
+        "mots_cles_ar": ["رفض التجديد", "غرامة الحرمان", "قيمة الأصل التجاري"]
+      },
+      {
+        "id": "loi77_37_art8",
+        "article": "Article 8",
+        "titre_fr": "Refus de renouvellement sans indemnité",
+        "titre_ar": "رفض التجديد بدون غرامة",
+        "concept_fr": "Exceptions au paiement de l'indemnité d'éviction",
+        "concept_ar": "استثناءات دفع غرامة الحرمان",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Le bailleur peut refuser le renouvellement du bail sans être tenu au paiement d'aucune indemnité: 1) S'il justifie d'un motif grave et légitime à l'encontre du locataire sortant; 2) S'il est établi que l'immeuble doit être totalement ou partiellement démoli comme étant en état d'insalubrité reconnue par l'autorité administrative, ou s'il est établi qu'il ne peut plus être occupé sans danger en raison de son état.",
+        "resume_ar": "يمكن للمكري رفض تجديد الكراء دون أن يلزم بدفع أي غرامة: 1) إذا أثبت وجود سبب خطير ومشروع ضد المكتري السابق; 2) إذا ثبت أن العقار يجب هدمه كليا أو جزئيا لكونه غير صالح للسكنى بموجب قرار من السلطة الإدارية، أو ثبت أنه لا يمكن إشغاله بدون خطر بسبب حالته.",
+        "delais": [],
+        "conditions": [
+          {
+            "texte_fr": "Motif grave et légitime à l'encontre du locataire",
+            "texte_ar": "سبب خطير ومشروع ضد المكتري"
+          },
+          {
+            "texte_fr": "Immeuble insalubre ou dangereux nécessitant démolition",
+            "texte_ar": "عقار غير صالح للسكنى أو خطير يستوجب الهدم"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Refus sans indemnité",
+            "texte_ar": "رفض بدون غرامة"
+          }
+        ],
+        "articles_lies": ["loi77_37_art7", "loi77_37_art9"],
+        "mots_cles_fr": ["motif grave et légitime", "démolition", "insalubrité", "sans indemnité"],
+        "mots_cles_ar": ["سبب خطير ومشروع", "هدم", "غير صالح للسكنى", "بدون غرامة"]
+      },
+      {
+        "id": "loi77_37_art9",
+        "article": "Article 9",
+        "titre_fr": "Refus pour reconstruction",
+        "titre_ar": "رفض التجديد لإعادة البناء",
+        "concept_fr": "Indemnité spéciale en cas de reconstruction",
+        "concept_ar": "غرامة خاصة في صورة إعادة البناء",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Le propriétaire a également le droit de refuser le renouvellement du bail pour reconstruire l'immeuble, à charge de payer au locataire évincé, préalablement à son départ, une indemnité égale à quatre ans de loyer. Le locataire a le droit de rester dans les lieux aux clauses et conditions du contrat expiré jusqu'au commencement effectif des travaux.",
+        "resume_ar": "للمالك أيضا الحق في رفض تجديد الكراء لإعادة بناء العقار، بشرط دفع غرامة للمكتري المحروم تعادل أربع سنوات من الكراء قبل مغادرته. وللمكتري الحق في البقاء بالمحل بشروط عقد الكراء المنتهي إلى حين البدء الفعلي في الأشغال.",
+        "delais": [
+          {
+            "duree": "4 ans",
+            "duree_ar": "4 سنوات",
+            "evenement_declencheur": "départ du locataire évincé",
+            "evenement_declencheur_ar": "مغادرة المكتري المحروم",
+            "consequence": "Indemnité de 4 ans de loyer",
+            "consequence_ar": "غرامة 4 سنوات كراء",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Reconstruction de l'immeuble",
+            "texte_ar": "إعادة بناء العقار"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Indemnité égale à 4 ans de loyer",
+            "texte_ar": "غرامة تعادل 4 سنوات من الكراء"
+          },
+          {
+            "texte_fr": "Droit de rester dans les lieux jusqu'au début des travaux",
+            "texte_ar": "الحق في البقاء بالمحل إلى حين بدء الأشغال"
+          }
+        ],
+        "articles_lies": ["loi77_37_art7", "loi77_37_art8", "loi77_37_art10"],
+        "mots_cles_fr": ["reconstruction", "quatre ans de loyer", "indemnité", "travaux"],
+        "mots_cles_ar": ["إعادة البناء", "أربع سنوات كراء", "غرامة", "أشغال"]
+      },
+      {
+        "id": "loi77_37_art10",
+        "article": "Article 10",
+        "titre_fr": "Droit de priorité du locataire",
+        "titre_ar": "حق الأولوية للمكتري",
+        "concept_fr": "Droit de priorité pour louer dans l'immeuble reconstruit",
+        "concept_ar": "حق الأولوية في كراء العقار المعاد بناؤه",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Pour bénéficier du droit de priorité prévu soit à l'article 8, soit à l'article 9 de la présente loi, le locataire doit, en quittant les lieux, ou au plus tard dans les trois mois qui suivent, notifier sa volonté d'en user au propriétaire, par exploit d'huissier-notaire en lui faisant connaître son nouveau domicile. Il doit dans les mêmes formes notifier, sous peine de déchéance, tout nouveau changement de domicile.",
+        "resume_ar": "للاستفادة من حق الأولوية المنصوص عليه بالفصل 8 أو الفصل 9 من هذا القانون، يجب على المكتري، عند مغادرة المحل أو في أجل أقصاه ثلاثة أشهر بعد ذلك، إعلام المالك برغبته في استعماله بواسطة عدل منفذ مع تعريفه بمحله الجديد. ويجب عليه بنفس الأشكال إعلامه بكل تغيير جديد في المحل تحت طائلة سقوط الحق.",
+        "delais": [
+          {
+            "duree": "3 mois",
+            "duree_ar": "3 أشهر",
+            "evenement_declencheur": "départ des lieux",
+            "evenement_declencheur_ar": "مغادرة المحل",
+            "consequence": "Notification de la volonté d'user du droit de priorité",
+            "consequence_ar": "إعلام الرغبة في استعمال حق الأولوية",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Notification par exploit d'huissier-notaire",
+            "texte_ar": "الإعلام بواسطة عدل منفذ"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Déchéance du droit de priorité si non notifié dans les 3 mois",
+            "texte_ar": "سقوط حق الأولوية إذا لم يتم الإعلام في أجل 3 أشهر"
+          }
+        ],
+        "articles_lies": ["loi77_37_art8", "loi77_37_art9"],
+        "mots_cles_fr": ["droit de priorité", "reconstruction", "huissier-notaire", "trois mois"],
+        "mots_cles_ar": ["حق الأولوية", "إعادة البناء", "عدل منفذ", "ثلاثة أشهر"]
+      },
+      {
+        "id": "loi77_37_art12",
+        "article": "Article 12",
+        "titre_fr": "Différé de renouvellement pour surélévation",
+        "titre_ar": "تأجيل التجديد لعلو البناء",
+        "concept_fr": "Report du renouvellement pour surélévation de l'immeuble",
+        "concept_ar": "تأجيل التجديد لعلو العقار",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Le propriétaire peut également différer pendant une durée maximum de trois ans, le renouvellement du bail, s'il se propose de surélever l'immeuble et si cette surélévation rend nécessaire l'éviction temporaire du locataire. Celui-ci a droit, dans ce cas, à une indemnité égale au préjudice subi sans pouvoir excéder trois ans de loyer.",
+        "resume_ar": "يمكن للمالك أيضا تأجيل تجديد الكراء لمدة أقصاها ثلاث سنوات، إذا كان يعتزم علو العقار وإذا كان هذا العلو يستوجب الإخلاء المؤقت للمكتري. ولهذا الأخير في هذه الحالة الحق في غرامة تعادل الضرر الحاصل دون أن تتجاوز ثلاث سنوات من الكراء.",
+        "delais": [
+          {
+            "duree": "3 ans",
+            "duree_ar": "3 سنوات",
+            "evenement_declencheur": "intention de surélever l'immeuble",
+            "evenement_declencheur_ar": "نية علو العقار",
+            "consequence": "Différé du renouvellement",
+            "consequence_ar": "تأجيل التجديد",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Surélévation de l'immeuble rendant nécessaire l'éviction temporaire",
+            "texte_ar": "علو العقار يستوجب الإخلاء المؤقت"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Indemnité égale au préjudice subi, maximum 3 ans de loyer",
+            "texte_ar": "غرامة تعادل الضرر الحاصل، بحد أقصى 3 سنوات كراء"
+          }
+        ],
+        "articles_lies": ["loi77_37_art7", "loi77_37_art9"],
+        "mots_cles_fr": ["surélévation", "différé de renouvellement", "indemnité", "trois ans"],
+        "mots_cles_ar": ["علو البناء", "تأجيل التجديد", "غرامة", "ثلاث سنوات"]
+      },
+      {
+        "id": "loi77_37_art13",
+        "article": "Article 13",
+        "titre_fr": "Reprise pour habitation personnelle",
+        "titre_ar": "الاسترجاع للسكنى الشخصية",
+        "concept_fr": "Refus de renouvellement pour reprise personnelle",
+        "concept_ar": "رفض التجديد للاسترجاع الشخصي",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Le propriétaire peut refuser le renouvellement du bail s'il reprend les lieux pour les habiter lui-même ou les faire habiter par ses ascendants ou descendants, à condition que le bénéficiaire de la reprise ne dispose pas d'une habitation correspondant à ses besoins normaux. La reprise partielle n'est admise qu'à la condition de ne pas porter atteinte à l'exploitation et à l'habitation du locataire. Le bailleur qui exerce le droit de reprise est tenu de verser au locataire une indemnité égale au loyer payé pour les locaux objet de la reprise pendant les cinq dernières années. Le bénéficiaire de la reprise doit occuper personnellement les lieux dans un délai de six mois et pendant une durée minimum de six ans.",
+        "resume_ar": "يمكن للمالك رفض تجديد الكراء إذا استرجع المحل لسكناه بنفسه أو لسكنى أصوله أو فروعه، بشرط ألا يكون للمستفيد من الاسترجاع سكن يلائم حاجاته العادية. ولا يقبل الاسترجاع الجزئي إلا بشرط عدم الإضرار باستغلال وسكنى المكتري. ويلتزم المالك الذي يمارس حق الاسترجاع بدفع غرامة للمكتري تعادل الكراء المدفوع للمحلات محل الاسترجاع خلال الخمس سنوات الأخيرة. ويجب على المستفيد من الاسترجاع أن يشغل المحل شخصيا في أجل ستة أشهر ولمدة لا تقل عن ست سنوات.",
+        "delais": [
+          {
+            "duree": "6 mois",
+            "duree_ar": "6 أشهر",
+            "evenement_declencheur": "départ du locataire évincé — occupation personnelle",
+            "evenement_declencheur_ar": "مغادرة المكتري المحروم — الشغل الشخصي",
+            "consequence": "Obligation d'occuper personnellement les lieux",
+            "consequence_ar": "التزام بشغل المحل شخصيا",
+            "prolongeable": false
+          },
+          {
+            "duree": "6 ans",
+            "duree_ar": "6 سنوات",
+            "evenement_declencheur": "départ du locataire évincé — durée minimum d'occupation",
+            "evenement_declencheur_ar": "مغادرة المكتري المحروم — المدة الدنيا للشغل",
+            "consequence": "Durée minimum d'occupation",
+            "consequence_ar": "مدة دنيا للشغل",
+            "prolongeable": false
+          },
+          {
+            "duree": "6 mois",
+            "duree_ar": "6 أشهر",
+            "evenement_declencheur": "refus de renouvellement — congé donné",
+            "evenement_declencheur_ar": "رفض التجديد — التنبيه بالخروج",
+            "consequence": "Congé donné au locataire",
+            "consequence_ar": "التنبيه بالخروج للمكتري",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Reprise pour habiter lui-même ou ses ascendants/descendants",
+            "texte_ar": "الاسترجاع لسكناه بنفسه أو أصوله/فروعه"
+          },
+          {
+            "texte_fr": "Le bénéficiaire ne dispose pas d'une habitation correspondant à ses besoins normaux",
+            "texte_ar": "المستفيد لا يملك سكنا يلائم حاجاته العادية"
+          },
+          {
+            "texte_fr": "Le local peut être adapté à un usage d'habitation par simples travaux",
+            "texte_ar": "يمكن تهيئة المحل للسكنى بأشغال بسيطة"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Indemnité égale au loyer des 5 dernières années",
+            "texte_ar": "غرامة تعادل كراء الخمس سنوات الأخيرة"
+          },
+          {
+            "texte_fr": "Amende de 100 à 1000 dinars en cas d'infraction",
+            "texte_ar": "خطية من 100 إلى 1000 دينار في حالة المخالفة"
+          },
+          {
+            "texte_fr": "Le local ne peut être affecté à un usage commercial pendant 6 ans",
+            "texte_ar": "لا يمكن تخصيص المحل لاستعمال تجاري لمدة 6 سنوات"
+          }
+        ],
+        "articles_lies": ["loi77_37_art7", "loi77_37_art8", "loi77_37_art10"],
+        "mots_cles_fr": ["reprise", "habitation", "indemnité", "six ans", "six mois"],
+        "mots_cles_ar": ["استرجاع", "سكنى", "غرامة", "ست سنوات", "ستة أشهر"]
+      },
+      {
+        "id": "loi77_37_art18",
+        "article": "Article 18",
+        "titre_fr": "Fraude du bailleur",
+        "titre_ar": "غش المكري",
+        "concept_fr": "Dommages-intérêts en cas de fraude du bailleur",
+        "concept_ar": "تعويضات في صورة غش المكري",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Au cas où il viendrait à être établi à la charge du bailleur qu'il n'a exercé les droits qui lui sont conférés aux articles 8 et suivants de la présente loi, qu'en vue de faire échec frauduleusement aux droits du locataire, notamment par des opérations de locations et de revente, que ces opérations aient un caractère civil ou commercial, le locataire aura droit à une indemnité égale au montant du préjudice subi.",
+        "resume_ar": "في صورة ثبوت أن المكري لم يمارس الحقوق المخولة له بالفصول 8 وما يليها من هذا القانون إلا بهدف معارضة حقوق المكتري بطريقة غاشة، خاصة من خلال عمليات الكراء وإعادة البيع، سواء كانت هذه العمليات مدنية أو تجارية، يكون للمكتري الحق في غرامة تعادل مبلغ الضرر الحاصل.",
+        "delais": [],
+        "conditions": [
+          {
+            "texte_fr": "Exercice des droits dans le but de faire échec frauduleusement aux droits du locataire",
+            "texte_ar": "ممارسة الحقوق بهدف معارضة حقوق المكتري بطريقة غاشة"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Indemnité égale au montant du préjudice subi",
+            "texte_ar": "غرامة تعادل مبلغ الضرر الحاصل"
+          }
+        ],
+        "articles_lies": ["loi77_37_art7", "loi77_37_art8", "loi77_37_art10"],
+        "mots_cles_fr": ["fraude", "bailleur", "indemnité", "préjudice", "locations", "revente"],
+        "mots_cles_ar": ["غش", "مكري", "غرامة", "ضرر", "كراء", "إعادة بيع"]
+      },
+      {
+        "id": "loi77_37_art19",
+        "article": "Article 19",
+        "titre_fr": "Maintien dans les lieux jusqu'au paiement",
+        "titre_ar": "البقاء بالمحل إلى حين الدفع",
+        "concept_fr": "Droit du preneur de rester jusqu'au paiement de l'indemnité",
+        "concept_ar": "حق المكتري في البقاء إلى حين دفع الغرامة",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Aucun locataire pouvant prétendre à l'indemnité d'éviction ou à une des indemnités prévues aux articles 9 et 16 de la présente loi ne peut être obligé de quitter les lieux avant de l'avoir reçue, à moins que le propriétaire ne lui verse une indemnité provisionnelle à fixer par le Président du Tribunal de 1ère Instance.",
+        "resume_ar": "لا يمكن إلزام أي مكتري يمكنه المطالبة بغرامة الحرمان أو بإحدى الغرامات المنصوص عليها بالفصلين 9 و16 من هذا القانون بمغادرة المحل قبل استلامها، إلا إذا دفع له المالك غرامة مؤقتة يحددها رئيس المحكمة الابتدائية.",
+        "delais": [],
+        "conditions": [
+          {
+            "texte_fr": "Locataire peut prétendre à une indemnité d'éviction",
+            "texte_ar": "المكتري يمكنه المطالبة بغرامة الحرمان"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Maintien dans les lieux jusqu'au paiement de l'indemnité",
+            "texte_ar": "البقاء بالمحل إلى حين دفع الغرامة"
+          }
+        ],
+        "articles_lies": ["loi77_37_art7", "loi77_37_art9"],
+        "mots_cles_fr": ["maintien dans les lieux", "indemnité provisionnelle", "expulsion"],
+        "mots_cles_ar": ["البقاء بالمحل", "غرامة مؤقتة", "الإخلاء"]
+      },
+      {
+        "id": "loi77_37_art20",
+        "article": "Article 20",
+        "titre_fr": "De la sous-location",
+        "titre_ar": "الكراء من الباطن",
+        "concept_fr": "Règles relatives à la sous-location",
+        "concept_ar": "قواعد الكراء من الباطن",
+        "acteurs": ["bailleur", "preneur", "sous-locataire"],
+        "acteurs_ar": ["المكري", "المكتري", "المكتري من الباطن"],
+        "resume_fr": "Sauf stipulation contraire au bail ou accord du bailleur, toute sous-location totale ou partielle est interdite. En cas de sous-location autorisée, le propriétaire est appelé à concourir à l'acte. Le locataire doit faire connaître au propriétaire son intention de sous-louer par exploit d'huissier-notaire. Dans les quinze jours de la signification, le propriétaire doit faire connaître s'il entend concourir à l'acte.",
+        "resume_ar": "ما لم ينص عقد الكراء على خلاف ذلك أو يوافق المكري، يمنع كل كراء من الباطن كليا أو جزئيا. وفي صورة الكراء من الباطن المرخص فيه، يُدعى المالك للمشاركة في العقد. ويجب على المكتري إعلام المالك بنيته في الكراء من الباطن بواسطة عدل منفذ. وفي أجل خمسة عشر يوما من التبليغ، يجب على المالك إعلامه بما إذا كان ينوي المشاركة في العقد.",
+        "delais": [
+          {
+            "duree": "15 jours",
+            "duree_ar": "15 يوما",
+            "evenement_declencheur": "signification de l'intention de sous-louer",
+            "evenement_declencheur_ar": "تبليغ نية الكراء من الباطن",
+            "consequence": "Réponse du propriétaire sur sa participation",
+            "consequence_ar": "جواب المالك حول مشاركته",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Autorisation du bailleur ou stipulation contraire au bail",
+            "texte_ar": "ترخيص المكري أو نص مخالف في عقد الكراء"
+          },
+          {
+            "texte_fr": "Notification par exploit d'huissier-notaire",
+            "texte_ar": "الإعلام بواسطة عدل منفذ"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Sous-location interdite si non autorisée",
+            "texte_ar": "الكراء من الباطن ممنوع إذا لم يرخص فيه"
+          },
+          {
+            "texte_fr": "Le propriétaire peut exiger une augmentation du loyer si le loyer de sous-location est supérieur",
+            "texte_ar": "يمكن للمالك طلب زيادة في الكراء إذا كان كراء الباطن أعلى"
+          }
+        ],
+        "articles_lies": ["loi77_37_art7", "loi77_37_art8"],
+        "mots_cles_fr": ["sous-location", "autorisation", "huissier-notaire", "quinze jours"],
+        "mots_cles_ar": ["الكراء من الباطن", "ترخيص", "عدل منفذ", "خمسة عشر يوما"]
+      },
+      {
+        "id": "loi77_37_art23",
+        "article": "Article 23",
+        "titre_fr": "Résiliation du bail pour défaut de paiement",
+        "titre_ar": "فسخ الكراء لعدم الدفع",
+        "concept_fr": "Résiliation automatique du bail 3 mois après avis de paiement",
+        "concept_ar": "الفسخ التلقائي للكراء بعد 3 أشهر من التنبيه بالدفع",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Le bail est résilié à défaut de paiement du loyer aux échéances convenues passé le délai de trois mois à partir de la date d'émission par voie d'huissier-notaire d'un avis de paiement resté sans effet. L'avis doit, à peine de nullité, mentionner ce délai. Le délai sus-visé ne peut être prorogé et la résiliation est prononcée d'office.",
+        "resume_ar": "يفسخ عقد الكراء عند عدم دفع الكراء في الآجال المتفق عليها بعد انقضاء أجل ثلاثة أشهر من تاريخ إرسال عدل منفذ تنبيه بالدفع بقي بدون مفعول. ويجب أن يذكر التنبيه هذا الأجل وإلا كان باطلا. ولا يمكن تمديد الأجل المذكور ويكون الفسخ حتميا.",
+        "delais": [
+          {
+            "duree": "3 mois",
+            "duree_ar": "3 أشهر",
+            "evenement_declencheur": "date d'émission de l'avis de paiement par huissier-notaire",
+            "evenement_declencheur_ar": "تاريخ إرسال التنبيه بالدفع من عدل منفذ",
+            "consequence": "Résiliation automatique du bail",
+            "consequence_ar": "الفسخ التلقائي للكراء",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Défaut de paiement du loyer aux échéances convenues",
+            "texte_ar": "عدم دفع الكراء في الآجال المتفق عليها"
+          },
+          {
+            "texte_fr": "Avis de paiement émis par huissier-notaire",
+            "texte_ar": "تنبيه بالدفع صادر عن عدل منفذ"
+          },
+          {
+            "texte_fr": "L'avis doit mentionner le délai de 3 mois, à peine de nullité",
+            "texte_ar": "يجب أن يذكر التنبيه أجل 3 أشهر تحت طائلة البطلان"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Résiliation automatique du bail (prononcée d'office)",
+            "texte_ar": "الفسخ التلقائي للكراء (حتمي)"
+          },
+          {
+            "texte_fr": "Le délai ne peut être prorogé",
+            "texte_ar": "لا يمكن تمديد الأجل"
+          }
+        ],
+        "articles_lies": ["codecommerce_art242"],
+        "mots_cles_fr": ["résiliation", "défaut de paiement", "huissier-notaire", "trois mois", "nullité"],
+        "mots_cles_ar": ["فسخ", "عدم الدفع", "عدل منفذ", "ثلاثة أشهر", "بطلان"]
+      },
+      {
+        "id": "loi77_37_art24",
+        "article": "Article 24",
+        "titre_fr": "De la révision du loyer",
+        "titre_ar": "مراجعة الكراء",
+        "concept_fr": "Révision du loyer des baux commerciaux",
+        "concept_ar": "مراجعة كراء العقود التجارية",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Les loyers des baux régis par la présente loi peuvent être révisés à la demande de l'une ou l'autre des parties. La demande doit être formée par exploit d'huissier-notaire. La demande en révision ne pourra être formée que trois ans au moins après la date d'entrée en jouissance du locataire ou après le point de départ du bail renouvelé. Cette demande ne sera recevable que si les conditions économiques se sont modifiées au point d'entraîner une variation de plus du quart de la valeur locative.",
+        "resume_ar": "يمكن مراجعة أكرية العقود الخاضعة لهذا القانون بطلب من أحد الطرفين. ويجب أن يقدم الطلب بواسطة عدل منفذ. ولا يمكن تقديم طلب المراجعة إلا بعد مرور ثلاث سنوات على الأقل من تاريخ دخول المكتري في الانتفاع أو من تاريخ بداية الكراء المجدد. ولا يقبل هذا الطلب إلا إذا تغيرت الظروف الاقتصادية بشكل يؤدي إلى تغير يزيد عن الربع في القيمة الكرائية.",
+        "delais": [
+          {
+            "duree": "3 ans",
+            "duree_ar": "3 سنوات",
+            "evenement_declencheur": "entrée en jouissance ou début du bail renouvelé",
+            "evenement_declencheur_ar": "الانتفاع أو بداية الكراء المجدد",
+            "consequence": "Possibilité de demander la révision",
+            "consequence_ar": "إمكانية طلب المراجعة",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Demande par exploit d'huissier-notaire",
+            "texte_ar": "الطلب بواسطة عدل منفذ"
+          },
+          {
+            "texte_fr": "Variation économique de plus du quart de la valeur locative",
+            "texte_ar": "تغير اقتصادي يزيد عن ربع القيمة الكرائية"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Révision du loyer à la valeur locative équitable",
+            "texte_ar": "مراجعة الكراء وفق القيمة الكرائية العادلة"
+          }
+        ],
+        "articles_lies": ["loi77_37_art23", "loi77_37_art27"],
+        "mots_cles_fr": ["révision", "loyer", "huissier-notaire", "trois ans", "variation du quart"],
+        "mots_cles_ar": ["مراجعة", "كراء", "عدل منفذ", "ثلاث سنوات", "تغير الربع"]
+      },
+      {
+        "id": "loi77_37_art25",
+        "article": "Article 25",
+        "titre_fr": "Conditions de révision du loyer",
+        "titre_ar": "شروط مراجعة الكراء",
+        "concept_fr": "Conditions de délai et de variation économique",
+        "concept_ar": "شروط الأجل والتغير الاقتصادي",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "La demande en révision ne pourra être formée que trois ans au moins après la date d'entrée en jouissance du locataire ou après le point de départ du bail renouvelé. Cette demande ne sera en outre recevable que si les conditions économiques se sont modifiées au point d'entraîner une variation de plus du quart de la valeur locative des lieux loués fixée contractuellement ou par décision judiciaire.",
+        "resume_ar": "لا يمكن تقديم طلب المراجعة إلا بعد مرور ثلاث سنوات على الأقل من تاريخ دخول المكتري في الانتفاع أو من تاريخ بداية الكراء المجدد. ولا يقبل هذا الطلب إلا إذا تغيرت الظروف الاقتصادية بشكل يؤدي إلى تغير يزيد عن الربع في القيمة الكرائية للمحل المحددة بعقد أو بقرار قضائي.",
+        "delais": [
+          {
+            "duree": "3 ans",
+            "duree_ar": "3 سنوات",
+            "evenement_declencheur": "entrée en jouissance ou début du bail renouvelé",
+            "evenement_declencheur_ar": "الانتفاع أو بداية الكراء المجدد",
+            "consequence": "Possibilité de demander la révision",
+            "consequence_ar": "إمكانية طلب المراجعة",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Variation économique de plus du quart de la valeur locative",
+            "texte_ar": "تغير اقتصادي يزيد عن ربع القيمة الكرائية"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Révision du loyer à la valeur locative équitable",
+            "texte_ar": "مراجعة الكراء وفق القيمة الكرائية العادلة"
+          }
+        ],
+        "articles_lies": ["loi77_37_art24", "loi77_37_art26"],
+        "mots_cles_fr": ["révision", "trois ans", "variation du quart", "valeur locative"],
+        "mots_cles_ar": ["مراجعة", "ثلاث سنوات", "تغير الربع", "القيمة الكرائية"]
+      },
+      {
+        "id": "loi77_37_art26",
+        "article": "Article 26",
+        "titre_fr": "Clause d'échelle mobile",
+        "titre_ar": "شرط السلم المتحرك",
+        "concept_fr": "Révision en cas de clause d'échelle mobile",
+        "concept_ar": "المراجعة في صورة شرط السلم المتحرك",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "En outre et par dérogation à l'article 25 si le bail est assorti d'une clause d'échelle mobile, la révision pourra être demandée chaque fois que, par le jeu de cette clause, le loyer se trouvera augmenté ou diminué de plus d'un quart par rapport au prix précédemment fixé contractuellement ou par décision judiciaire. Le juge devra accepter le jeu de l'échelle mobile à la valeur locative équitable au jour de la demande. Si l'un des éléments retenus pour le calcul de la clause d'échelle mobile vient à disparaître, la révision ne pourra être demandée et poursuivie que dans les conditions visées à l'article 25 de la présente loi.",
+        "resume_ar": "بصفة استثنائية ولخلافا للفصل 25، إذا كان عقد الكراء يتضمن شرط السلم المتحرك، يمكن طلب المراجعة كلما ارتفع أو انخفض الكراء بأكثر من الربع مقارنة بالسعر المحدد سابقا بعقد أو بقرار قضائي. ويجب على القاضي قبول تطبيق السلم المتحرك على القيمة الكرائية العادلة يوم تقديم الطلب. وإذا اختفى أحد عناصر احتساب شرط السلم المتحرك، لا يمكن طلب المراجعة ومتابعتها إلا في الشروط المنصوص عليها بالفصل 25 من هذا القانون.",
+        "delais": [],
+        "conditions": [
+          {
+            "texte_fr": "Clause d'échelle mobile dans le bail",
+            "texte_ar": "شرط السلم المتحرك في عقد الكراء"
+          },
+          {
+            "texte_fr": "Variation de plus du quart par le jeu de la clause",
+            "texte_ar": "تغير يزيد عن الربع بفعل الشرط"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Révision du loyer",
+            "texte_ar": "مراجعة الكراء"
+          }
+        ],
+        "articles_lies": ["loi77_37_art24", "loi77_37_art25"],
+        "mots_cles_fr": ["échelle mobile", "révision", "variation du quart"],
+        "mots_cles_ar": ["السلم المتحرك", "مراجعة", "تغير الربع"]
+      },
+      {
+        "id": "loi77_37_art27",
+        "article": "Article 27",
+        "titre_fr": "Procédure - Forclusion",
+        "titre_ar": "الإجراءات - سقوط الحق",
+        "concept_fr": "Délai de 3 mois pour saisir le tribunal",
+        "concept_ar": "أجل 3 أشهر لرفع الدعوى",
+        "acteurs": ["preneur"],
+        "acteurs_ar": ["المكتري"],
+        "resume_fr": "Le locataire qui entend, soit contester les motifs de refus de renouvellement invoqués par le bailleur, soit demander le paiement de l'indemnité d'éviction, ou qui n'accepte pas les conditions proposées pour le nouveau bail, doit saisir la juridiction compétente dans les trois mois de la notification du congé ou de la réponse du propriétaire prévue à l'article 5 de la présente loi. Passé ce délai, il se trouvera forclos et sera réputé, soit avoir renoncé au renouvellement ou à l'indemnité d'éviction, soit avoir accepté les conditions nouvelles exigées.",
+        "resume_ar": "يجب على المكتري الذي يريد إما منازعة أسباب رفض التجديد التي تمسك بها المكري، أو طلب دفع غرامة الحرمان، أو الذي لا يقبل الشروط المقترحة للكراء الجديد، أن يرفع دعوى لدى المحكمة المختصة في أجل ثلاثة أشهر من تبليغ التنبيه أو جواب المالك المنصوص عليه بالفصل 5 من هذا القانون. وإلا سقط حقه واعتبر إما متنازلا عن التجديد أو غرامة الحرمان، أو قابلا للشروط الجديدة المطلوبة.",
+        "delais": [
+          {
+            "duree": "3 mois",
+            "duree_ar": "3 أشهر",
+            "evenement_declencheur": "notification du congé ou réponse du propriétaire",
+            "evenement_declencheur_ar": "تبليغ التنبيه أو جواب المالك",
+            "consequence": "Forclusion",
+            "consequence_ar": "سقوط الحق",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Contestation du refus, demande d'indemnité ou refus des nouvelles conditions",
+            "texte_ar": "منازعة الرفض أو طلب غرامة أو رفض الشروط الجديدة"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Forclusion si le délai de 3 mois n'est pas respecté",
+            "texte_ar": "سقوط الحق إذا لم يحترم أجل 3 أشهر"
+          },
+          {
+            "texte_fr": "Réputé avoir renoncé au renouvellement ou accepté les nouvelles conditions",
+            "texte_ar": "يعتبر متنازلا عن التجديد أو قابلا للشروط الجديدة"
+          }
+        ],
+        "articles_lies": ["loi77_37_art5", "loi77_37_art7", "loi77_37_art28"],
+        "mots_cles_fr": ["procédure", "forclusion", "trois mois", "tribunal", "contestation"],
+        "mots_cles_ar": ["إجراءات", "سقوط الحق", "ثلاثة أشهر", "محكمة", "منازعة"]
+      },
+      {
+        "id": "loi77_37_art28",
+        "article": "Article 28",
+        "titre_fr": "Procédure en référé",
+        "titre_ar": "الإجراءات الاستعجالية",
+        "concept_fr": "Comparution devant le Président du Tribunal en référé",
+        "concept_ar": "الحضور أمام رئيس المحكمة بصفة استعجالية",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Lorsque le bailleur consent au renouvellement et que le différend porte sur le prix, la durée, les conditions accessoires ou sur l'ensemble de ces éléments, les parties comparaissent quel que soit le montant du loyer devant le Président du Tribunal de 1ère instance de la situation de l'immeuble ou devant le juge qui le remplace, lequel sera saisi et statuera conformément à la procédure en matière de référé.",
+        "resume_ar": "عندما يوافق المكري على التجديد ويكون النزاع حول الثمن أو المدة أو الشروط الثانوية أو مجموع هذه العناصر، يحضر الطرفان كيفما كان مبلغ الكراء أمام رئيس المحكمة الابتدائية الواقع بدائرتها العقار أو أمام القاضي الذي ينوبه، الذي ينظر في القضية ويحكم وفقا للإجراءات الاستعجالية.",
+        "delais": [],
+        "conditions": [
+          {
+            "texte_fr": "Différend sur le prix, la durée ou les conditions",
+            "texte_ar": "نزاع حول الثمن أو المدة أو الشروط"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Comparution devant le Président du Tribunal en référé",
+            "texte_ar": "الحضور أمام رئيس المحكمة بصفة استعجالية"
+          }
+        ],
+        "articles_lies": ["loi77_37_art27", "loi77_37_art29"],
+        "mots_cles_fr": ["référé", "président du tribunal", "prix", "durée"],
+        "mots_cles_ar": ["استعجالي", "رئيس المحكمة", "الثمن", "المدة"]
+      },
+      {
+        "id": "loi77_37_art29",
+        "article": "Article 29",
+        "titre_fr": "Obligation de payer le loyer pendant l'instance",
+        "titre_ar": "الالتزام بدفع الكراء خلال النظر",
+        "concept_fr": "Paiement du loyer pendant la durée de l'instance",
+        "concept_ar": "دفع الكراء خلال مدة النظر",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Pendant la durée de l'instance, le locataire est tenu de continuer à payer les loyers échus au prix ancien ou, le cas échéant, au prix qui pourra en tout état de cause, être fixé à titre provisionnel par la juridiction saisie conformément à l'article précédent, sauf compte à faire entre le bailleur et le preneur, après fixation définitive du prix du bail renouvelé.",
+        "resume_ar": "خلال مدة النظر، يجب على المكتري مواصلة دفع الأكرية المستحقة بالسعر القديم أو، عند الاقتضاء، بالسعر الذي يمكن في كل الحالات تحديده بصفة مؤقتة من المحكمة المعروضة عليها القضية وفقا للفصل السابق، مع تصفية الحساب بين المكري والمكتري بعد التحديد النهائي لكراء العقد المجدد.",
+        "delais": [],
+        "conditions": [
+          {
+            "texte_fr": "Instance en cours",
+            "texte_ar": "نظر قضية جارية"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Obligation de continuer à payer le loyer",
+            "texte_ar": "الالتزام بمواصلة دفع الكراء"
+          }
+        ],
+        "articles_lies": ["loi77_37_art28", "loi77_37_art30"],
+        "mots_cles_fr": ["loyer", "instance", "paiement", "provisionnel"],
+        "mots_cles_ar": ["كراء", "نظر", "دفع", "مؤقت"]
+      },
+      {
+        "id": "loi77_37_art30",
+        "article": "Article 30",
+        "titre_fr": "Refus de renouvellement aux conditions fixées",
+        "titre_ar": "رفض التجديد بالشروط المحددة",
+        "concept_fr": "Recours du locataire en cas de refus de renouvellement",
+        "concept_ar": "طعن المكتري في صورة رفض التجديد",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Si le bailleur refuse le renouvellement du bail aux conditions déterminées en application de l'article 28 de la présente loi le locataire devra, sous peine de déchéance, saisir la juridiction compétente dans les trois mois de la notification du refus de renouvellement. Le propriétaire qui a succombé peut, dans la quinzaine à partir du jour où la décision sera devenue définitive, se soustraire au paiement de l'indemnité à charge pour lui de supporter les frais de l'instance et de consentir au renouvellement du bail dont les conditions, en cas de désaccord, sont fixées conformément aux règles de l'article 28.",
+        "resume_ar": "إذا رفض المكري تجديد الكراء بالشروط المحددة تطبيقا للفصل 28 من هذا القانون، يجب على المكتري تحت طائلة سقوط الحق أن يرفع دعوى لدى المحكمة المختصة في أجل ثلاثة أشهر من تبليغ رفض التجديد. ويمكن للمالك الذي خسر القضية، في أجل خمسة عشر يوما من تاريخ صدور القرار البات، أن يتفادى دفع الغرامة بشرط تحمله مصاريف القضية وموافقته على تجديد الكراء الذي تحدد شروطه في صورة الخلاف وفقا لأحكام الفصل 28.",
+        "delais": [
+          {
+            "duree": "3 mois",
+            "duree_ar": "3 أشهر",
+            "evenement_declencheur": "notification du refus de renouvellement",
+            "evenement_declencheur_ar": "تبليغ رفض التجديد",
+            "consequence": "Déchéance",
+            "consequence_ar": "سقوط الحق",
+            "prolongeable": false
+          },
+          {
+            "duree": "15 jours",
+            "duree_ar": "15 يوما",
+            "evenement_declencheur": "décision définitive",
+            "evenement_declencheur_ar": "القرار البات",
+            "consequence": "Possibilité pour le bailleur de consentir au renouvellement",
+            "consequence_ar": "إمكانية المكري للموافقة على التجديد",
+            "prolongeable": false
+          }
+        ],
+        "conditions": [
+          {
+            "texte_fr": "Refus de renouvellement aux conditions fixées par le tribunal",
+            "texte_ar": "رفض التجديد بالشروط المحددة من المحكمة"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Recours du locataire dans les 3 mois",
+            "texte_ar": "طعن المكتري في أجل 3 أشهر"
+          },
+          {
+            "texte_fr": "Possibilité pour le bailleur de consentir au renouvellement dans les 15 jours",
+            "texte_ar": "إمكانية المكري للموافقة على التجديد في أجل 15 يوما"
+          }
+        ],
+        "articles_lies": ["loi77_37_art28", "loi77_37_art27"],
+        "mots_cles_fr": ["refus de renouvellement", "conditions", "recours", "déchéance"],
+        "mots_cles_ar": ["رفض التجديد", "شروط", "طعن", "سقوط الحق"]
+      },
+      {
+        "id": "loi77_37_art32",
+        "article": "Article 32",
+        "titre_fr": "Nullité des clauses",
+        "titre_ar": "بطلان الشروط",
+        "concept_fr": "Nullité des clauses faisant échec au droit de renouvellement",
+        "concept_ar": "بطلان الشروط المعرقلة لحق التجديد",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Sont nuls et de nul effet quelle qu'en soit la forme, les clauses, stipulations et arrangements qui auraient pour effet de faire échec au droit de renouvellement institué par la présente loi ou aux dispositions des articles 23 et 26 de la présente loi.",
+        "resume_ar": "تكون باطلة وعديمة الأثر كيفما كان شكلها، الشروط والاتفاقات والترتيبات التي يكون من شأنها تعطيل حق التجديد المقرر بهذا القانون أو أحكام الفصلين 23 و26 من هذا القانون.",
+        "delais": [],
+        "conditions": [],
+        "consequences": [
+          {
+            "texte_fr": "Nullité absolue des clauses",
+            "texte_ar": "بطلان مطلق للشروط"
+          }
+        ],
+        "articles_lies": ["loi77_37_art23", "loi77_37_art24", "loi77_37_art7"],
+        "mots_cles_fr": ["nullité", "clause", "renouvellement", "protection du locataire"],
+        "mots_cles_ar": ["بطلان", "شرط", "تجديد", "حماية المكتري"]
+      },
+      {
+        "id": "loi77_37_art34",
+        "article": "Article 34",
+        "titre_fr": "Faillite et liquidation judiciaire",
+        "titre_ar": "التفليس والتصفية القضائية",
+        "concept_fr": "Maintien du bail en cas de faillite du preneur",
+        "concept_ar": "استمرار الكراء في صورة تفليس المكتري",
+        "acteurs": ["bailleur", "preneur", "syndic"],
+        "acteurs_ar": ["المكري", "المكتري", "الوكيل"],
+        "resume_fr": "La faillite et la liquidation judiciaire n'entraînent pas de plein droit la résiliation du bail des immeubles affectés à l'industrie, au commerce ou à l'artisanat du débiteur, y compris les locaux dépendant de ces immeubles et servant à son habitation ou à celle de sa famille. Toute stipulation contraire est réputée non écrite.",
+        "resume_ar": "لا يؤدي التفليس والتصفية القضائية بحكم القانون إلى فسخ كراء العقارات المخصصة لصناعة أو تجارة أو حرفة المدين، بما في ذلك المحلات التابعة لهذه العقارات والمخصصة لسكناه أو سكنى عائلته. وكل شرط مخالف يعتبر كأن لم يكن.",
+        "delais": [],
+        "conditions": [],
+        "consequences": [
+          {
+            "texte_fr": "Le bail continue malgré la faillite",
+            "texte_ar": "يستمر الكراء رغم التفليس"
+          },
+          {
+            "texte_fr": "Toute clause contraire est réputée non écrite",
+            "texte_ar": "كل شرط مخالف يعتبر كأن لم يكن"
+          }
+        ],
+        "articles_lies": ["codecommerce_art489", "codecommerce_art490"],
+        "mots_cles_fr": ["faillite", "liquidation judiciaire", "résiliation", "bail"],
+        "mots_cles_ar": ["تفليس", "تصفية قضائية", "فسخ", "كراء"]
+      },
+      {
+        "id": "loi77_37_art35",
+        "article": "Article 35",
+        "titre_fr": "Indemnité d'amélioration",
+        "titre_ar": "غرامة التحسينات",
+        "concept_fr": "Indemnité pour améliorations matérielles effectuées par le locataire",
+        "concept_ar": "غرامة التحسينات المادية المنجزة من المكتري",
+        "acteurs": ["bailleur", "preneur"],
+        "acteurs_ar": ["المكري", "المكتري"],
+        "resume_fr": "Lorsqu'il est à la fois propriétaire de l'immeuble loué et du fonds de commerce qui y est exploité et que le bail porte en même temps sur les deux, le bailleur devra verser au locataire à son départ, une indemnité correspondant au profit qu'il pourra retirer de la plus-value apportée soit au fonds, soit à la valeur locative de l'immeuble par les améliorations matérielles effectuées par le locataire avec l'accord exprès du propriétaire.",
+        "resume_ar": "عندما يكون المالك في نفس الوقت مالكا للعقار المكترى وللأصل التجاري المستغل به، ويكون عقد الكراء يشمل الاثنين معا، يجب على المكري دفع غرامة للمكتري عند مغادرته تعادل الربح الذي يمكن أن يستفيد منه من الزيادة في قيمة الأصل أو في القيمة الكرائية للعقار بفعل التحسينات المادية المنجزة من المكتري بموافقة صريحة من المالك.",
+        "delais": [],
+        "conditions": [
+          {
+            "texte_fr": "Bailleur propriétaire de l'immeuble et du fonds de commerce",
+            "texte_ar": "المكري مالك العقار والأصل التجاري"
+          },
+          {
+            "texte_fr": "Améliorations matérielles effectuées par le locataire avec accord exprès du propriétaire",
+            "texte_ar": "تحسينات مادية منجزة من المكتري بموافقة صريحة من المالك"
+          }
+        ],
+        "consequences": [
+          {
+            "texte_fr": "Indemnité correspondant à la plus-value apportée",
+            "texte_ar": "غرامة تعادل الزيادة في القيمة"
+          }
+        ],
+        "articles_lies": ["loi77_37_art7", "loi77_37_art19"],
+        "mots_cles_fr": ["indemnité d'amélioration", "plus-value", "locataire", "bailleur"],
+        "mots_cles_ar": ["غرامة التحسينات", "الزيادة في القيمة", "المكتري", "المكري"]
+      }
+    ]
+  }
+}

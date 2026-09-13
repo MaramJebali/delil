@@ -1,0 +1,535 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-09",
+  "sources": {
+    "loi_77_37": {
+      "name_fr": "Loi n° 77-37 du 25 mai 1977",
+      "name_ar": "القانون عدد 37 لسنة 1977",
+      "topic": "Rapports bailleurs / locataires — baux commerciaux"
+    },
+    "code_commerce": {
+      "name_fr": "Code de Commerce — Livre II (Fonds de commerce)",
+      "name_ar": "المجلة التجارية — الكتاب الثاني (الأصل التجاري)",
+      "topic": "Vente, location, nantissement du fonds de commerce"
+    },
+    "loi_95_44": {
+      "name_fr": "Loi n° 95-44 du 2 mai 1995 relative au registre du commerce (RNE)",
+      "name_ar": "القانون عدد 44 لسنة 1995 المتعلق بالسجل التجاري",
+      "topic": "Mentions obligatoires pour l'immatriculation"
+    }
+  },
+
+  "contract_types": {
+
+    "location-gerance": {
+      "label_fr": "Location-gérance (Gérance libre)",
+      "label_ar": "الوكالة الحرة للأصل التجاري",
+      "aliases_fr": ["gérance libre", "location-gérance", "location gérance", "contrat de gérance"],
+      "aliases_ar": ["الوكالة الحرة", "الكراء الحر", "كراء الأصل التجاري"],
+      "legal_governance": [
+        "Code de Commerce art. 229 à 234",
+        "Code de Commerce art. 467 (cahier des charges)",
+        "Loi 95-44 art. 9 B-7 (mentions RNE)"
+      ],
+
+      "mandatory_items": [
+
+        {
+          "id": "bailleur_identite",
+          "group": "parties",
+          "label_fr": "Nom, prénom et domicile du loueur de fonds (propriétaire)",
+          "label_ar": "اسم ولقب وعنوان مكري الأصل (المالك)",
+          "legal_basis": "Loi 95-44, art. 9 B-7 — Code de Commerce art. 189 bis",
+          "severity": "blocking",
+          "extraction_field": "bailleur_nom_complet",
+          "search_hints": ["loueur", "propriétaire du fonds", "le bailleur", "nom", "prénom", "domicile", "المكري", "مالك الأصل"],
+          "why": "RNE refuse le contrat si l'identité du loueur est absente."
+        },
+        {
+          "id": "bailleur_cin",
+          "group": "parties",
+          "label_fr": "Numéro de CIN ou passeport du loueur",
+          "label_ar": "عدد بطاقة التعريف أو جواز سفر المكري",
+          "legal_basis": "Code de Commerce art. 189 bis",
+          "severity": "blocking",
+          "extraction_field": "bailleur_cin",
+          "search_hints": ["CIN", "carte d'identité", "passeport", "ب.ت.و", "بطاقة التعريف"],
+          "why": "Obligatoire pour la rédaction de l'acte relatif au fonds de commerce."
+        },
+        {
+          "id": "bailleur_matricule",
+          "group": "parties",
+          "label_fr": "Matricule fiscal du loueur",
+          "label_ar": "المعرّف الجبائي للمكري",
+          "legal_basis": "RNE — mentions d'identification des parties",
+          "severity": "warning",
+          "extraction_field": "bailleur_matricule",
+          "search_hints": ["matricule fiscal", "MF", "المعرّف الجبائي"],
+          "why": "Nécessaire pour l'inscription au RNE."
+        },
+
+        {
+          "id": "preneur_identite",
+          "group": "parties",
+          "label_fr": "Nom, prénom et domicile du gérant libre",
+          "label_ar": "اسم ولقب وعنوان المكتري (المستغل الحر)",
+          "legal_basis": "Loi 95-44, art. 9 B-7 — Code de Commerce art. 189 bis",
+          "severity": "blocking",
+          "extraction_field": "preneur_nom_complet",
+          "search_hints": ["gérant libre", "locataire", "le preneur", "nom", "prénom", "domicile", "المكتري", "المستغل الحر"],
+          "why": "RNE refuse le contrat si l'identité du gérant est absente."
+        },
+        {
+          "id": "preneur_cin",
+          "group": "parties",
+          "label_fr": "Numéro de CIN ou passeport du gérant libre",
+          "label_ar": "عدد بطاقة التعريف أو جواز سفر المكتري",
+          "legal_basis": "Code de Commerce art. 189 bis",
+          "severity": "blocking",
+          "extraction_field": "preneur_cin",
+          "search_hints": ["CIN", "carte d'identité", "passeport", "ب.ت.و", "بطاقة التعريف"],
+          "why": "Obligatoire dans tout acte relatif au fonds de commerce."
+        },
+        {
+          "id": "preneur_matricule",
+          "group": "parties",
+          "label_fr": "Matricule fiscal du gérant libre",
+          "label_ar": "المعرّف الجبائي للمكتري",
+          "legal_basis": "RNE — mentions d'identification des parties",
+          "severity": "warning",
+          "extraction_field": "preneur_matricule",
+          "search_hints": ["matricule fiscal", "MF", "المعرّف الجبائي"],
+          "why": "Nécessaire pour l'inscription au RNE."
+        },
+
+        {
+          "id": "fonds_description",
+          "group": "fonds",
+          "label_fr": "Description du fonds de commerce (éléments transmis)",
+          "label_ar": "وصف الأصل التجاري (العناصر المتفق عليها)",
+          "legal_basis": "Code de Commerce art. 189 — Loi 95-44 art. 9 B-5",
+          "severity": "blocking",
+          "extraction_field": "fonds_description",
+          "search_hints": ["fonds de commerce", "éléments", "clientèle", "enseigne", "matériel", "الأصل التجاري", "الحرفاء", "اللافتة"],
+          "why": "Définit précisément ce qui est transmis au gérant."
+        },
+        {
+          "id": "fonds_adresse",
+          "group": "fonds",
+          "label_fr": "Adresse d'exploitation du fonds",
+          "label_ar": "عنوان استغلال الأصل التجاري",
+          "legal_basis": "Loi 95-44 art. 9 B-1",
+          "severity": "blocking",
+          "extraction_field": "fonds_adresse",
+          "search_hints": ["adresse", "sis à", "situé à", "عنوان", "الكائن بـ"],
+          "why": "RNE vérifie l'adresse exacte d'exploitation."
+        },
+        {
+          "id": "fonds_activite",
+          "group": "fonds",
+          "label_fr": "Nature de l'activité autorisée",
+          "label_ar": "طبيعة النشاط المرخص",
+          "legal_basis": "Loi 95-44 art. 9 B-2",
+          "severity": "blocking",
+          "extraction_field": "fonds_activite",
+          "search_hints": ["activité", "exploitation", "commerce", "نشاط", "استغلال"],
+          "why": "RNE vérifie que l'activité déclarée est compatible avec l'objet du fonds."
+        },
+        {
+          "id": "fonds_rc",
+          "group": "fonds",
+          "label_fr": "Numéro d'immatriculation du fonds au registre du commerce",
+          "label_ar": "عدد التقييد بالسجل التجاري للأصل التجاري",
+          "legal_basis": "Loi 95-44 art. 9 B-5",
+          "severity": "blocking",
+          "extraction_field": "fonds_ancien_rc",
+          "search_hints": ["registre du commerce", "R.C.", "numéro d'immatriculation", "السجل التجاري", "عدد التقييد"],
+          "why": "Permet au RNE de rattacher le fonds à un dossier existant."
+        },
+
+        {
+          "id": "date_debut",
+          "group": "terms",
+          "label_fr": "Date de début / entrée en jouissance",
+          "label_ar": "تاريخ بداية الانتفاع",
+          "legal_basis": "Loi 95-44 art. 9 B-7",
+          "severity": "blocking",
+          "extraction_field": "date_effet",
+          "search_hints": ["entrée en jouissance", "date d'effet", "à compter du", "تاريخ بداية الانتفاع"],
+          "why": "Mention obligatoire — définit la période de gérance."
+        },
+        {
+          "id": "date_terme",
+          "group": "terms",
+          "label_fr": "Date de terme de la location-gérance",
+          "label_ar": "تاريخ انتهاء الوكالة الحرة",
+          "legal_basis": "Loi 95-44 art. 9 B-7",
+          "severity": "blocking",
+          "extraction_field": "duree",
+          "search_hints": ["durée", "terme", "expiration", "مدة", "تاريخ الانتهاء"],
+          "why": "RNE refuse le contrat si la durée n'est pas explicite."
+        },
+        {
+          "id": "redevance_montant",
+          "group": "terms",
+          "label_fr": "Montant de la redevance (loyer de gérance)",
+          "label_ar": "مبلغ الكراء (الرسم)",
+          "legal_basis": "Code de Commerce art. 230",
+          "severity": "blocking",
+          "extraction_field": "redevance_montant",
+          "search_hints": ["redevance", "loyer", "montant", "دينار", "كراء", "مبلغ"],
+          "why": "Élément essentiel du contrat de location-gérance."
+        },
+        {
+          "id": "redevance_periodicite",
+          "group": "terms",
+          "label_fr": "Périodicité de paiement de la redevance",
+          "label_ar": "دورية خلاص الكراء",
+          "legal_basis": "Code de Commerce art. 467 (≤ 3 mois)",
+          "severity": "warning",
+          "extraction_field": "redevance_periodicite",
+          "search_hints": ["mensuel", "trimestriel", "annuel", "échéance", "شهري", "ثلاثي", "سنوي"],
+          "why": "Art. 467 exige que les intervalles entre échéances ne dépassent pas 3 mois."
+        },
+        {
+          "id": "tacite_reconduction",
+          "group": "terms",
+          "label_fr": "Clause de renouvellement par tacite reconduction",
+          "label_ar": "شرط التجديد الضمني",
+          "legal_basis": "Loi 95-44 art. 9 B-7 — mention obligatoire",
+          "severity": "blocking",
+          "extraction_field": "clause_renouvellement",
+          "search_hints": ["tacite reconduction", "renouvelable", "تجديد ضمني", "قابل للتجديد"],
+          "why": "RNE refuse un contrat de gérance sans cette mention."
+        },
+
+        {
+          "id": "avocat_redacteur",
+          "group": "legal_form",
+          "label_fr": "Identité et coordonnées de l'avocat rédacteur (nom, CIN, adresse, signature, cachet)",
+          "label_ar": "هوية المحامي المحرر (الاسم، ب.ت.و، العنوان، الإمضاء، الختم)",
+          "legal_basis": "Code de Commerce art. 189 bis (loi 2003-31)",
+          "severity": "blocking",
+          "extraction_field": "avocat_redacteur",
+          "search_hints": ["avocat", "rédacteur", "cabinet", "محامي", "محرر"],
+          "why": "Obligatoire depuis 2003 : tout contrat relatif au fonds de commerce doit être rédigé par un avocat non stagiaire. Absence = nullité absolue."
+        },
+        {
+          "id": "avocat_consultation_rc",
+          "group": "legal_form",
+          "label_fr": "Mention de consultation du registre du commerce et du registre des nantissements",
+          "label_ar": "ذكر الاطلاع على السجل التجاري وسجل الرهون",
+          "legal_basis": "Code de Commerce art. 189 bis, 2°",
+          "severity": "blocking",
+          "extraction_field": "avocat_consultation_rc",
+          "search_hints": ["consulté le registre", "registre des nantissements", "الاطلاع على السجل"],
+          "why": "Obligatoire pour protéger l'acquéreur/locataire."
+        },
+        {
+          "id": "information_parties",
+          "group": "legal_form",
+          "label_fr": "Mention que l'avocat a informé les parties de la situation juridique du fonds",
+          "label_ar": "ذكر إعلام الأطراف بالوضعية القانونية للأصل",
+          "legal_basis": "Code de Commerce art. 189 bis, 3°",
+          "severity": "blocking",
+          "extraction_field": "avocat_information_parties",
+          "search_hints": ["informé les parties", "situation juridique", "إعلام الأطراف"],
+          "why": "Obligatoire — absence = nullité absolue."
+        },
+        {
+          "id": "formalites_a_accomplir",
+          "group": "legal_form",
+          "label_fr": "Indication des formalités à accomplir (JORT, journaux, RC)",
+          "label_ar": "بيان الإجراءات الواجب القيام بها (النشر بالرائد الرسمي، الجرائد، السجل التجاري)",
+          "legal_basis": "Code de Commerce art. 189 bis, 5°",
+          "severity": "blocking",
+          "extraction_field": "avocat_formalites",
+          "search_hints": ["formalités", "publicité", "JORT", "الرائد الرسمي", "الإجراءات"],
+          "why": "Le contrat doit rappeler les formalités de publicité (JORT + 2 journaux + RC)."
+        },
+
+        {
+          "id": "engagement_non_dissipation_corporels",
+          "group": "engagements",
+          "label_fr": "Engagement exprès du gérant de ne pas dissiper les éléments corporels",
+          "label_ar": "التزام صريح من المكتري بعدم تبديد العناصر المادية",
+          "legal_basis": "Code de Commerce art. 467",
+          "severity": "blocking",
+          "extraction_field": "clause_dissipation",
+          "search_hints": ["ne pas dissiper", "éléments corporels", "عدم التبديد", "العناصر المادية"],
+          "why": "Obligatoire dans tout contrat de location-gérance."
+        },
+        {
+          "id": "engagement_non_dilapidation_incorporels",
+          "group": "engagements",
+          "label_fr": "Engagement exprès de ne pas dilapider les éléments incorporels (clientèle, enseigne...)",
+          "label_ar": "التزام صريح بعدم تبديد العناصر المعنوية (الحرفاء، اللافتة...)",
+          "legal_basis": "Code de Commerce art. 467",
+          "severity": "blocking",
+          "extraction_field": "clause_dissipation",
+          "search_hints": ["clientèle", "achalandage", "éléments incorporels", "الحرفاء", "السمعة"],
+          "why": "Protège la substance du fonds."
+        },
+        {
+          "id": "engagement_destination",
+          "group": "engagements",
+          "label_fr": "Engagement du gérant de ne pas modifier la destination du fonds sans accord du loueur",
+          "label_ar": "التزام المكتري بعدم تغيير وجهة الأصل دون موافقة المكري",
+          "legal_basis": "Code de Commerce art. 467",
+          "severity": "warning",
+          "extraction_field": "clause_duree_interdiction",
+          "search_hints": ["destination", "usage", "modification", "وجهة الاستغلال", "تغيير"],
+          "why": "Empêche une modification unilatérale de l'activité."
+        },
+        {
+          "id": "mention_gerant_libre_sur_docs",
+          "group": "engagements",
+          "label_fr": "Obligation pour le gérant de mentionner 'gérant libre' sur tous documents commerciaux",
+          "label_ar": "التزام المكتري بذكر 'مستغل حر' على جميع الوثائق التجارية",
+          "legal_basis": "Code de Commerce art. 232",
+          "severity": "warning",
+          "extraction_field": "mention_gérant_libre",
+          "search_hints": ["gérant libre", "mention", "documents", "factures", "مستغل حر", "الوثائق"],
+          "why": "Si absent du contrat, le gérant doit quand même le respecter — mais mieux vaut l'inscrire."
+        },
+
+        {
+          "id": "signatures",
+          "group": "execution",
+          "label_fr": "Signatures des deux parties et de l'avocat rédacteur",
+          "label_ar": "إمضاء الطرفين والمحامي المحرر",
+          "legal_basis": "Code de Commerce art. 190 (à peine de nullité)",
+          "severity": "blocking",
+          "extraction_field": "signatures",
+          "search_hints": ["signature", "signé", "cachet", "إمضاء", "ختم"],
+          "why": "Absence de signature = nullité du contrat."
+        },
+        {
+          "id": "date_signature",
+          "group": "execution",
+          "label_fr": "Date de signature du contrat",
+          "label_ar": "تاريخ إمضاء العقد",
+          "legal_basis": "Code de Commerce art. 190",
+          "severity": "blocking",
+          "extraction_field": "date_signature",
+          "search_hints": ["fait à", "le", "date", "تاريخ", "حرر بـ"],
+          "why": "Point de départ des délais de publicité (art. 231 — 15 jours)."
+        }
+      ]
+    },
+
+    "bail-commercial": {
+      "label_fr": "Bail commercial",
+      "label_ar": "الكراء التجاري",
+      "aliases_fr": ["bail commercial", "bail à usage commercial", "location commerciale"],
+      "aliases_ar": ["الكراء التجاري", "كراء المحلات التجارية"],
+      "legal_governance": [
+        "Loi 77-37 du 25 mai 1977",
+        "Code de Commerce art. 189 bis (si le fonds est mentionné)"
+      ],
+      "mandatory_items": [
+        {
+          "id": "bailleur_identite",
+          "group": "parties",
+          "label_fr": "Identité complète du bailleur",
+          "label_ar": "الهوية الكاملة للمكري",
+          "legal_basis": "Loi 77-37",
+          "severity": "blocking",
+          "extraction_field": "bailleur_nom_complet",
+          "search_hints": ["bailleur", "propriétaire", "المكري", "المالك"]
+        },
+        {
+          "id": "preneur_identite",
+          "group": "parties",
+          "label_fr": "Identité complète du preneur",
+          "label_ar": "الهوية الكاملة للمكتري",
+          "legal_basis": "Loi 77-37",
+          "severity": "blocking",
+          "extraction_field": "preneur_nom_complet",
+          "search_hints": ["preneur", "locataire", "المكتري"]
+        },
+        {
+          "id": "duree",
+          "group": "terms",
+          "label_fr": "Durée du bail",
+          "label_ar": "مدة الكراء",
+          "legal_basis": "Loi 77-37",
+          "severity": "blocking",
+          "extraction_field": "duree",
+          "search_hints": ["durée", "مدة"]
+        },
+        {
+          "id": "loyer",
+          "group": "terms",
+          "label_fr": "Montant du loyer et périodicité",
+          "label_ar": "مبلغ الكراء ودوريته",
+          "legal_basis": "Loi 77-37 art. 22",
+          "severity": "blocking",
+          "extraction_field": "loyer_montant",
+          "search_hints": ["loyer", "كراء", "مبلغ"]
+        },
+        {
+          "id": "adresse_bien",
+          "group": "fonds",
+          "label_fr": "Désignation précise des lieux loués",
+          "label_ar": "التعيين الدقيق للمحل المكري",
+          "legal_basis": "Loi 77-37",
+          "severity": "blocking",
+          "extraction_field": "adresse_bien",
+          "search_hints": ["adresse", "situé", "عنوان", "الكائن"]
+        },
+        {
+          "id": "activite_autorisee",
+          "group": "fonds",
+          "label_fr": "Activité autorisée dans les lieux",
+          "label_ar": "النشاط المرخص بالمحل",
+          "legal_basis": "Loi 77-37",
+          "severity": "warning",
+          "extraction_field": "activite_autorisee",
+          "search_hints": ["activité", "usage", "نشاط", "الاستعمال"]
+        }
+      ]
+    },
+
+    "cession-fonds-commerce": {
+      "label_fr": "Cession de fonds de commerce",
+      "label_ar": "تفويت الأصل التجاري",
+      "aliases_fr": ["vente de fonds de commerce", "cession de fonds", "vente du fonds"],
+      "aliases_ar": ["بيع الأصل التجاري", "تفويت الأصل التجاري"],
+      "legal_governance": [
+        "Code de Commerce art. 189 à 228",
+        "Code de Commerce art. 189 bis (avocat obligatoire)"
+      ],
+      "mandatory_items": [
+        {
+          "id": "vendeur_identite",
+          "group": "parties",
+          "label_fr": "Identité complète du vendeur (cédant)",
+          "label_ar": "الهوية الكاملة للبائع (المفوّت)",
+          "legal_basis": "Code de Commerce art. 190",
+          "severity": "blocking",
+          "extraction_field": "bailleur_nom_complet",
+          "search_hints": ["vendeur", "cédant", "البائع"]
+        },
+        {
+          "id": "acquereur_identite",
+          "group": "parties",
+          "label_fr": "Identité complète de l'acquéreur",
+          "label_ar": "الهوية الكاملة للمشتري",
+          "legal_basis": "Code de Commerce art. 190",
+          "severity": "blocking",
+          "extraction_field": "preneur_nom_complet",
+          "search_hints": ["acquéreur", "acheteur", "المشتري"]
+        },
+        {
+          "id": "prix_ventilation",
+          "group": "terms",
+          "label_fr": "Prix avec ventilation distincte (éléments incorporels / matériel / marchandises)",
+          "label_ar": "الثمن مع التفصيل (العناصر المعنوية / المعدات / السلع)",
+          "legal_basis": "Code de Commerce art. 190",
+          "severity": "blocking",
+          "extraction_field": "redevance_montant",
+          "search_hints": ["prix", "éléments incorporels", "matériel", "marchandises", "الثمن", "العناصر المعنوية"]
+        },
+        {
+          "id": "etat_inscriptions",
+          "group": "legal",
+          "label_fr": "État des inscriptions, privilèges et nantissements",
+          "label_ar": "بيان التقييدات والامتيازات والرهون",
+          "legal_basis": "Code de Commerce art. 190, 2°",
+          "severity": "blocking",
+          "extraction_field": "clause_nantissements",
+          "search_hints": ["inscriptions", "privilèges", "nantissements", "التقييدات", "الرهون"]
+        },
+        {
+          "id": "chiffre_affaires_3ans",
+          "group": "legal",
+          "label_fr": "Chiffre d'affaires des trois derniers exercices",
+          "label_ar": "رقم المعاملات للثلاث سنوات الأخيرة",
+          "legal_basis": "Code de Commerce art. 190, 3°",
+          "severity": "blocking",
+          "extraction_field": "chiffre_affaires",
+          "search_hints": ["chiffre d'affaires", "رقم المعاملات"]
+        },
+        {
+          "id": "benefices_3ans",
+          "group": "legal",
+          "label_fr": "Bénéfices des trois derniers exercices",
+          "label_ar": "الأرباح للثلاث سنوات الأخيرة",
+          "legal_basis": "Code de Commerce art. 190, 4°",
+          "severity": "blocking",
+          "extraction_field": "benefices",
+          "search_hints": ["bénéfices", "الأرباح"]
+        },
+        {
+          "id": "bail_details",
+          "group": "legal",
+          "label_fr": "Mentions du bail (date, durée, loyer actuel, bailleur)",
+          "label_ar": "بيانات عقد الكراء (التاريخ، المدة، الكراء الحالي، المكري)",
+          "legal_basis": "Code de Commerce art. 190, 5°",
+          "severity": "warning",
+          "extraction_field": "bail_details",
+          "search_hints": ["bail", "loyer actuel", "date du bail", "عقد الكراء"]
+        },
+        {
+          "id": "avocat_redacteur",
+          "group": "legal_form",
+          "label_fr": "Avocat rédacteur (identité + CIN + adresse + consultation RC)",
+          "label_ar": "المحامي المحرر (الهوية، ب.ت.و، العنوان، الاطلاع على السجل)",
+          "legal_basis": "Code de Commerce art. 189 bis",
+          "severity": "blocking",
+          "extraction_field": "avocat_redacteur",
+          "search_hints": ["avocat", "rédacteur", "محامي"]
+        }
+      ]
+    }
+  },
+
+  "post_signature_formalities": {
+    "location-gerance": [
+      {
+        "id": "publication_jort",
+        "label_fr": "Publication au JORT + 2 journaux (dont 1 en arabe) dans les 15 jours",
+        "label_ar": "النشر بالرائد الرسمي وجريدتين (إحداهما بالعربية) في أجل 15 يوما",
+        "legal_basis": "Code de Commerce art. 231",
+        "deadline_days": 15,
+        "responsible": "preneur",
+        "severity": "blocking"
+      },
+      {
+        "id": "inscription_rc_preneur",
+        "label_fr": "Inscription du gérant libre au registre du commerce (RNE)",
+        "label_ar": "تقييد المكتري في السجل التجاري",
+        "legal_basis": "Code de Commerce art. 231",
+        "responsible": "preneur",
+        "severity": "blocking"
+      },
+      {
+        "id": "modification_rc_bailleur",
+        "label_fr": "Le loueur modifie son inscription RC avec mention de la mise en location",
+        "label_ar": "يعدّل المكري تقييده بالسجل التجاري مع ذكر الكراء",
+        "legal_basis": "Code de Commerce art. 231",
+        "responsible": "bailleur",
+        "severity": "blocking"
+      }
+    ],
+    "cession-fonds-commerce": [
+      {
+        "id": "publication_jort",
+        "label_fr": "Publication de la cession au JORT + 1 journal dans les 15 jours",
+        "label_ar": "نشر التفويت بالرائد الرسمي وجريدة في أجل 15 يوما",
+        "legal_basis": "Code de Commerce art. 191",
+        "deadline_days": 15,
+        "severity": "blocking"
+      },
+      {
+        "id": "delai_opposition_20j",
+        "label_fr": "Délai d'opposition des créanciers : 20 jours après publication",
+        "label_ar": "أجل تعرض الدائنين: 20 يوما بعد النشر",
+        "legal_basis": "Code de Commerce art. 192",
+        "deadline_days": 20,
+        "severity": "blocking"
+      }
+    ]
+  }
+}
