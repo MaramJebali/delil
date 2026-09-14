@@ -1,18 +1,18 @@
 ﻿<p align="center">
-  <img src="./frontend-v2/src/assets/LOGO.png" alt="Dalil logo" width="160">
+  <img src="./frontend/src/assets/LOGO.png" alt="Dalil logo" width="160">
 </p>
 
 <h1 align="center">Dalil (دليل)</h1>
-<p align="center"><b>Assistant juridique pour le droit commercial tunisien</b></p>
+<p align="center"><b>Platforme pour une guide juridique pour le droit commercial tunisien</b></p>
 
 ---
 
 Dalil est une plateforme d'assistance juridique pour les PME tunisiennes.
-Elle couvre trois cas d'usage autour du **fonds de commerce** (الأصل التجاري) :
+Elle couvre deux cas d'usage autour du **fonds de commerce** (الأصل التجاري) :
 
 1. **Compréhension du contrat** — analyse d'un contrat téléversé (PDF / image), extraction des champs, contrôle de conformité RNE / Code de Commerce.
-2. **Accompagnement procédural** — assistant conversationnel qui guide l'utilisateur à travers les procédures (bailleur vs commerçant), avec un diagramme d'étapes, des fiches d'avocats, et un squelette de contrat.
-3. **Résolution des litiges** — *(stub, non implémenté)*.
+2. **Accompagnement procédural** — assistant Rag conversationnel qui guide l'utilisateur à travers les procédures (bailleur vs commerçant), avec un diagramme d'étapes, des fiches d'avocats, et un squelette de contrat.
+
 
 **Périmètre légal :** Loi n° 77-37 du 25 mai 1977 (baux commerciaux) et Code de Commerce — Livre II (fonds de commerce).
 
@@ -133,7 +133,7 @@ Delil/
 │           ├── tools.py            # Outils partagés (workflow, lawyers, contrat)
 │           ├── rag.py              # ChromaDB : build + query
 │           ├── voice.py            # STT (Whisper) + TTS
-│           ├── data/               # ⚠️ NON versionné — voir section dédiée
+│           ├── data/               # ⚠️ NON$versionné — voir section dédiée
 │           │   ├── advocates.json
 │           │   ├── code_comm.json
 │           │   ├── contract_requirements.json
@@ -267,12 +267,12 @@ Base interne des avocats tunisiens, filtrée par région.
 
 Utilisé par l'outil `find_lawyers()` (Workflow Guidance) pour proposer des avocats en fonction de la région détectée dans la question.
 
-### `code_comm.json` — Code de Commerce (Livre II)
+### `code_comm.json` — Code de Commerce (Livre II) Bases de données scrappées avant la transformation en vector database
 
 Articles 189 à 467 relatifs au fonds de commerce.
 Structure : `{ "code_de_commerce": { "articles": [ {...}, ... ] } }`
 
-### `loi_77_37.json` — Loi 77-37 sur les baux commerciaux
+### `loi_77_37.json` — Loi 77-37 sur les baux commerciaux -Bases de données scrappées avant la transformation en vector database
 
 Articles 1 à 35 relatifs aux rapports bailleurs / locataires.
 Structure : `{ "loi_77_37": { "articles": [ {...}, ... ] } }`
