@@ -9,19 +9,18 @@ import {
 } from "lucide-react";
 
 import api from "../../api/axios";
-import heroBg from "../../assets/hero.jpg";
 
 const EASE = [0.22, 1, 0.36, 1];
+const NAV_OFFSET = "h-[80px]";
 
-// Scroll style — no flex-1, we control width explicitly
 const SCROLL_Y =
   "min-h-0 overflow-y-auto overscroll-contain " +
-  "[scrollbar-width:thin] [scrollbar-color:rgba(247,243,234,0.18)_transparent] " +
+  "[scrollbar-width:thin] [scrollbar-color:rgba(5,11,22,0.18)_transparent] " +
   "[&::-webkit-scrollbar]:w-1.5 " +
   "[&::-webkit-scrollbar-track]:bg-transparent " +
   "[&::-webkit-scrollbar-thumb]:rounded-full " +
-  "[&::-webkit-scrollbar-thumb]:bg-[#F7F3EA]/20 " +
-  "hover:[&::-webkit-scrollbar-thumb]:bg-[#F7F3EA]/35";
+  "[&::-webkit-scrollbar-thumb]:bg-[#050B16]/15 " +
+  "hover:[&::-webkit-scrollbar-thumb]:bg-[#050B16]/25";
 
 // ═══════════════════════════════════════════════════════════════════
 //  Field labels (FR)
@@ -69,60 +68,61 @@ const FIELD_LABELS = {
 };
 
 // ═══════════════════════════════════════════════════════════════════
-//  Nav — same as Dashboard
+//  Nav — exactly the same as WorkflowGuidance
 // ═══════════════════════════════════════════════════════════════════
 function Nav() {
   return (
     <motion.header
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, ease: EASE, delay: 0.05 }}
-      className="relative z-20 shrink-0"
+      transition={{ duration: 0.5, ease: EASE }}
+      className="fixed inset-x-0 top-0 z-50"
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
-        <Link to="/" className="flex items-center gap-2.5">
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-[#E8C766]/40 bg-[#E8C766]/15 backdrop-blur-md">
-            <Scale size={16} className="text-[#E8C766]" />
+      <div className="mx-auto max-w-7xl px-4 pt-3 lg:px-6">
+        <div className="flex h-16 items-center justify-between rounded-2xl border border-white/10 bg-[#050B16]/90 backdrop-blur-2xl shadow-[0_8px_40px_-12px_rgba(5,11,22,0.6)]">
+          <div className="flex items-center gap-2.5 pl-4">
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-[#E8C766]/50 bg-[#E8C766]/15">
+              <FileText size={16} className="text-[#E8C766]" />
+            </div>
+            <span className="text-[15px] font-semibold tracking-tight text-[#F7F3EA]">
+              Compréhension du contrat
+            </span>
           </div>
-          <span className="text-base font-semibold tracking-tight text-[#F7F3EA] drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
-            Dalil
-            <span className="mx-2 text-[#E8C766]">·</span>
-            <span className="font-medium text-[#F7F3EA]/75">Compréhension du contrat</span>
-          </span>
-        </Link>
 
-        <Link
-          to="/dashboard"
-          className="inline-flex items-center gap-2 rounded-full border border-[#F7F3EA]/35 bg-[#050B16]/40 px-5 py-2 text-sm font-semibold text-[#F7F3EA] backdrop-blur-md transition-all duration-300 hover:border-[#E8C766]/60 hover:bg-[#E8C766]/15 hover:text-[#E8C766]"
-        >
-          <ArrowLeft size={14} />
-          Retour
-        </Link>
+          <div className="pr-4">
+            <Link
+              to="/dashboard"
+              className="inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-[#F7F3EA] backdrop-blur-md transition-all hover:border-[#E8C766]/50 hover:bg-[#E8C766]/15 hover:text-[#E8C766]"
+            >
+              <ArrowLeft size={14} /> Retour
+            </Link>
+          </div>
+        </div>
       </div>
     </motion.header>
   );
 }
 
 // ═══════════════════════════════════════════════════════════════════
-//  Footer — same as Dashboard
+//  Footer — exactly the same as WorkflowGuidance
 // ═══════════════════════════════════════════════════════════════════
 function Footer() {
   return (
     <motion.footer
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, ease: EASE, delay: 0.7 }}
-      className="relative z-10 shrink-0 border-t border-[#F7F3EA]/15 bg-[#050B16]/40 backdrop-blur-md"
+      transition={{ duration: 0.5, ease: EASE, delay: 0.3 }}
+      className="relative z-10 shrink-0 border-t border-[#050B16]/8 bg-[#FAF7F0]/60 backdrop-blur-md"
     >
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-5 sm:flex-row lg:px-10">
-        <p className="text-[12px] font-medium text-[#F7F3EA]/70">
-          © {new Date().getFullYear()} Dalil
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-3 sm:flex-row lg:px-10">
+        <p className="text-[12px] font-medium text-[#050B16]/55">
+          © {new Date().getFullYear()} Dalil — Justice commerciale pour les PME.
         </p>
         <div className="flex items-center gap-6">
-          <a href="#" className="text-[12px] font-medium text-[#F7F3EA]/60 transition-colors hover:text-[#E8C766]">
+          <a href="#" className="text-[12px] font-medium text-[#050B16]/55 transition-colors hover:text-[#050B16]">
             Aide
           </a>
-          <a href="#" className="text-[12px] font-medium text-[#F7F3EA]/60 transition-colors hover:text-[#E8C766]">
+          <a href="#" className="text-[12px] font-medium text-[#050B16]/55 transition-colors hover:text-[#050B16]">
             Contact
           </a>
         </div>
@@ -180,7 +180,7 @@ function GradientScanner() {
 }
 
 // ═══════════════════════════════════════════════════════════════════
-//  Upload zone — fills the whole column, light card
+//  Upload zone
 // ═══════════════════════════════════════════════════════════════════
 function UploadZone({ onFiles }) {
   const inputRef = useRef(null);
@@ -203,8 +203,8 @@ function UploadZone({ onFiles }) {
                   rounded-3xl border-2 border-dashed p-8 text-center backdrop-blur-xl
                   transition-all duration-300
                   ${dragOver
-                    ? "border-[#E8C766] bg-white/95 shadow-[0_20px_60px_-20px_rgba(232,199,102,0.6)]"
-                    : "border-white/25 bg-white/90 hover:border-[#E8C766]/60"}`}
+                    ? "border-[#E8C766] bg-white shadow-[0_20px_60px_-20px_rgba(232,199,102,0.6)]"
+                    : "border-[#050B16]/15 bg-white/70 hover:border-[#E8C766]/60"}`}
     >
       <motion.div
         whileHover={{ scale: 1.05 }}
@@ -249,7 +249,7 @@ function UploadZone({ onFiles }) {
 }
 
 // ═══════════════════════════════════════════════════════════════════
-//  File preview — solid white card, larger preview area
+//  File preview
 // ═══════════════════════════════════════════════════════════════════
 function FilePreview({ files, extracting, onReset, onRemove, onAddMore }) {
   const previews = useMemo(
@@ -269,21 +269,21 @@ function FilePreview({ files, extracting, onReset, onRemove, onAddMore }) {
   return (
     <div className="flex flex-col gap-3">
       <div className="flex items-center justify-between">
-        <span className="text-[12px] font-medium text-[#F7F3EA]/75">
+        <span className="text-[12px] font-medium text-[#050B16]/60">
           {files.length} document{files.length > 1 ? "s" : ""}
         </span>
         <div className="flex gap-2">
           <button
             onClick={onAddMore}
             disabled={extracting}
-            className="inline-flex items-center gap-1 rounded-full border border-[#F7F3EA]/25 bg-[#050B16]/50 px-3 py-1.5 text-[11.5px] font-medium text-[#F7F3EA] backdrop-blur-md transition-all hover:border-[#E8C766]/50 hover:bg-[#E8C766]/15 hover:text-[#E8C766] disabled:opacity-50"
+            className="inline-flex items-center gap-1 rounded-full border border-[#050B16]/12 bg-white px-3 py-1.5 text-[11.5px] font-medium text-[#050B16]/70 transition-all hover:border-[#050B16]/25 hover:text-[#050B16] disabled:opacity-50"
           >
             <Plus size={12} /> Ajouter
           </button>
           <button
             onClick={onReset}
             disabled={extracting}
-            className="inline-flex items-center gap-1 rounded-full border border-[#F7F3EA]/25 bg-[#050B16]/50 px-3 py-1.5 text-[11.5px] font-medium text-[#F7F3EA] backdrop-blur-md transition-all hover:border-[#E8C766]/50 hover:bg-[#E8C766]/15 hover:text-[#E8C766] disabled:opacity-50"
+            className="inline-flex items-center gap-1 rounded-full border border-[#050B16]/12 bg-white px-3 py-1.5 text-[11.5px] font-medium text-[#050B16]/70 transition-all hover:border-[#050B16]/25 hover:text-[#050B16] disabled:opacity-50"
           >
             <RefreshCw size={12} /> Effacer
           </button>
@@ -295,9 +295,8 @@ function FilePreview({ files, extracting, onReset, onRemove, onAddMore }) {
           {previews.map((p, i) => (
             <div
               key={i}
-              className="relative overflow-hidden rounded-2xl border border-white/30 bg-white shadow-[0_12px_36px_-14px_rgba(0,0,0,0.6)]"
+              className="relative overflow-hidden rounded-2xl border border-[#050B16]/10 bg-white shadow-[0_12px_36px_-14px_rgba(5,11,22,0.25)]"
             >
-              {/* File strip */}
               <div className="flex items-center gap-2 border-b border-[#050B16]/8 bg-[#FAF7F0] px-3 py-2 text-[11.5px] text-[#050B16]/70">
                 {p.isImage ? <FileImage size={13} /> : <FileText size={13} />}
                 <span className="truncate flex-1 font-medium">{p.file.name}</span>
@@ -315,7 +314,6 @@ function FilePreview({ files, extracting, onReset, onRemove, onAddMore }) {
                 )}
               </div>
 
-              {/* Preview body — solid white bg, tall */}
               <div className="relative w-full bg-white">
                 {p.isImage ? (
                   <a
@@ -371,7 +369,7 @@ function FilePreview({ files, extracting, onReset, onRemove, onAddMore }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="flex items-center justify-center gap-2 rounded-xl border border-[#F7F3EA]/20 bg-[#050B16]/50 py-2.5 text-[12.5px] font-medium text-[#F7F3EA]/85 backdrop-blur-md"
+            className="flex items-center justify-center gap-2 rounded-xl border border-[#050B16]/10 bg-white/80 py-2.5 text-[12.5px] font-medium text-[#050B16]/75 backdrop-blur-md"
           >
             <Loader2 size={15} className="animate-spin text-[#E8C766]" />
             Analyse en cours…
@@ -427,7 +425,7 @@ function InnerCard({ children, className = "" }) {
   return (
     <div
       className={
-        "rounded-2xl border border-white/15 bg-white/95 p-5 shadow-[0_10px_30px_-20px_rgba(0,0,0,0.5)] backdrop-blur-xl " +
+        "rounded-2xl border border-[#050B16]/8 bg-white/95 p-5 shadow-[0_10px_30px_-20px_rgba(5,11,22,0.25)] backdrop-blur-xl " +
         className
       }
     >
@@ -620,7 +618,7 @@ function Step2Panel({ data, contractContext }) {
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4, ease: EASE }}
-        className="rounded-2xl border border-[#E8C766]/40 bg-gradient-to-br from-[#E8C766]/15 via-white/95 to-white/95 p-5 shadow-[0_10px_30px_-20px_rgba(0,0,0,0.5)] backdrop-blur-xl"
+        className="rounded-2xl border border-[#E8C766]/40 bg-gradient-to-br from-[#E8C766]/15 via-white/95 to-white/95 p-5 shadow-[0_10px_30px_-20px_rgba(5,11,22,0.25)] backdrop-blur-xl"
       >
         <div className="mb-3 flex items-start justify-between gap-3">
           <div className="flex items-center gap-2">
@@ -656,7 +654,7 @@ function Step2Panel({ data, contractContext }) {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.05, duration: 0.4, ease: EASE }}
-          className="rounded-2xl border border-red-300/60 bg-red-50/95 p-5 shadow-[0_10px_30px_-20px_rgba(0,0,0,0.5)] backdrop-blur-xl"
+          className="rounded-2xl border border-red-300/60 bg-red-50/95 p-5 shadow-[0_10px_30px_-20px_rgba(5,11,22,0.25)] backdrop-blur-xl"
         >
           <h3 className="mb-2 flex items-center gap-2 text-[13px] font-semibold text-red-700">
             <AlertTriangle size={14} /> Éléments manquants
@@ -933,127 +931,119 @@ export default function ContractUnderstanding() {
   );
 
   return (
-    <div className="relative flex h-screen flex-col overflow-hidden bg-[#050B16] font-['Inter',system-ui,sans-serif] text-[#F7F3EA] antialiased">
-      {/* Hero background — same as Dashboard */}
-      <div className="absolute inset-0">
-        <img src={heroBg} alt="" aria-hidden className="h-full w-full object-cover" />
-      </div>
-
-      <div className="absolute inset-0 bg-[#050B16]/25" />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#050B16]/45 via-[#050B16]/10 to-[#050B16]/65" />
-
-      {/* Décor — grid + halos */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute inset-0 opacity-[0.10] [background-image:linear-gradient(to_right,rgba(247,243,234,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(247,243,234,0.08)_1px,transparent_1px)] [background-size:56px_56px] [mask-image:radial-gradient(80%_60%_at_50%_40%,black,transparent_25%)]" />
-        <motion.div
-          aria-hidden
-          animate={{ x: [0, 30, -20, 0], y: [0, -20, 20, 0] }}
-          transition={{ duration: 24, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -left-40 -top-52 h-[520px] w-[520px] rounded-full bg-[#E8C766]/[0.12] blur-[160px]"
-        />
-        <motion.div
-          aria-hidden
-          animate={{ x: [0, -40, 20, 0], y: [0, 20, -20, 0] }}
-          transition={{ duration: 28, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -bottom-56 -right-44 h-[520px] w-[520px] rounded-full bg-[#F7F3EA]/[0.08] blur-[160px]"
-        />
-      </div>
-
-      {/* Nav — Dashboard style */}
+    <div className="flex h-screen flex-col overflow-hidden bg-[#FAF7F0] font-['Inter',system-ui,sans-serif] text-[#050B16] antialiased">
       <Nav />
+      <div className={`${NAV_OFFSET} shrink-0`} aria-hidden />
 
-      {/* Two equal halves — both 50% width, always */}
-      <main className="relative z-10 flex min-h-0 flex-1 overflow-hidden">
-        {/* LEFT — documents (exactly half) */}
-        <div className={`w-1/2 shrink-0 grow-0 border-e border-[#F7F3EA]/15 ${SCROLL_Y} p-5 lg:p-6`}>
-          <div className="flex h-full flex-col">
-            {files.length === 0 ? (
-              <UploadZone onFiles={handleFiles} />
-            ) : (
-              <>
-                <FilePreview
-                  files={files}
-                  extracting={extracting}
-                  onReset={handleReset}
-                  onRemove={handleRemove}
-                  onAddMore={() => {
-                    const inp = document.createElement("input");
-                    inp.type = "file";
-                    inp.multiple = true;
-                    inp.accept =
-                      ".pdf,.jpg,.jpeg,.png,.webp,.bmp,.tif,.tiff,application/pdf,image/*";
-                    inp.onchange = (e) => {
-                      const fs = Array.from(e.target.files || []);
-                      if (fs.length) handleFiles(fs);
-                    };
-                    inp.click();
-                  }}
-                />
-
-                {!step1 && !extracting && (
-                  <motion.button
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    onClick={handleStart}
-                    className="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl bg-[#E8C766] py-3.5 text-[13.5px] font-semibold text-[#050B16] shadow-[0_10px_30px_-8px_rgba(232,199,102,0.6)] transition-all hover:bg-[#F4E0A8] hover:shadow-[0_14px_36px_-10px_rgba(232,199,102,0.7)]"
-                  >
-                    <Play size={15} /> Démarrer l'analyse
-                  </motion.button>
-                )}
-              </>
-            )}
-
-            {error && (
-              <div className="mt-4 flex items-center gap-2 rounded-xl border border-red-400/40 bg-red-500/15 px-3.5 py-2.5 text-[12.5px] font-medium text-red-100 backdrop-blur-md">
-                <AlertCircle size={14} /> {error}
-              </div>
-            )}
-          </div>
+      <main className="relative flex min-h-0 flex-1 overflow-hidden">
+        {/* Soft halos — same as WorkflowGuidance */}
+        <div className="pointer-events-none absolute inset-0">
+          <motion.div
+            aria-hidden
+            animate={{ x: [0, 30, -20, 0], y: [0, -20, 20, 0] }}
+            transition={{ duration: 24, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute -left-40 -top-52 h-[520px] w-[520px] rounded-full bg-[#E8C766]/[0.18] blur-[160px]"
+          />
+          <motion.div
+            aria-hidden
+            animate={{ x: [0, -40, 20, 0], y: [0, 20, -20, 0] }}
+            transition={{ duration: 28, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute -bottom-56 -right-44 h-[520px] w-[520px] rounded-full bg-[#050B16]/[0.04] blur-[160px]"
+          />
         </div>
 
-        {/* RIGHT — results (exactly half) */}
-        <div className={`w-1/2 shrink-0 grow-0 ${SCROLL_Y} p-5 lg:p-6`}>
-          {!step1 && !extracting && (
-            <div className="grid h-full place-items-center text-center">
-              <div className="max-w-xs rounded-3xl border border-white/15 bg-[#050B16]/40 p-8 backdrop-blur-xl">
-                <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-2xl bg-[#E8C766]/20 backdrop-blur-md">
-                  <Sparkles size={24} className="text-[#E8C766]" />
+        {/* Two equal halves */}
+        <div className="relative z-10 flex min-h-0 flex-1 overflow-hidden">
+          {/* LEFT — documents */}
+          <div className={`w-1/2 shrink-0 grow-0 border-e border-[#050B16]/8 ${SCROLL_Y} p-5 lg:p-6`}>
+            <div className="flex h-full flex-col">
+              {files.length === 0 ? (
+                <UploadZone onFiles={handleFiles} />
+              ) : (
+                <>
+                  <FilePreview
+                    files={files}
+                    extracting={extracting}
+                    onReset={handleReset}
+                    onRemove={handleRemove}
+                    onAddMore={() => {
+                      const inp = document.createElement("input");
+                      inp.type = "file";
+                      inp.multiple = true;
+                      inp.accept =
+                        ".pdf,.jpg,.jpeg,.png,.webp,.bmp,.tif,.tiff,application/pdf,image/*";
+                      inp.onchange = (e) => {
+                        const fs = Array.from(e.target.files || []);
+                        if (fs.length) handleFiles(fs);
+                      };
+                      inp.click();
+                    }}
+                  />
+
+                  {!step1 && !extracting && (
+                    <motion.button
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      onClick={handleStart}
+                      className="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl bg-[#E8C766] py-3.5 text-[13.5px] font-semibold text-[#050B16] shadow-[0_10px_30px_-8px_rgba(232,199,102,0.6)] transition-all hover:bg-[#F4E0A8] hover:shadow-[0_14px_36px_-10px_rgba(232,199,102,0.7)]"
+                    >
+                      <Play size={15} /> Démarrer l'analyse
+                    </motion.button>
+                  )}
+                </>
+              )}
+
+              {error && (
+                <div className="mt-4 flex items-center gap-2 rounded-xl border border-red-500/20 bg-red-500/10 px-3.5 py-2.5 text-[12.5px] font-medium text-red-600">
+                  <AlertCircle size={14} /> {error}
                 </div>
-                <p className="text-[13.5px] font-medium leading-relaxed text-[#F7F3EA]/85">
-                  Importez un ou plusieurs documents à gauche,
-                  <br />
-                  puis cliquez sur « Démarrer l'analyse ».
-                </p>
-              </div>
+              )}
             </div>
-          )}
+          </div>
 
-          {extracting && !step1 && (
-            <div className="grid h-full place-items-center text-center">
-              <div className="rounded-3xl border border-white/15 bg-[#050B16]/40 p-8 backdrop-blur-xl">
-                <Loader2 size={28} className="mx-auto mb-3 animate-spin text-[#E8C766]" />
-                <p className="text-[13px] font-medium text-[#F7F3EA]/85">
-                  Lecture et extraction des champs…
-                </p>
+          {/* RIGHT — results */}
+          <div className={`w-1/2 shrink-0 grow-0 ${SCROLL_Y} p-5 lg:p-6`}>
+            {!step1 && !extracting && (
+              <div className="grid h-full place-items-center text-center">
+                <div className="max-w-xs rounded-3xl border border-[#050B16]/8 bg-white/70 p-8 backdrop-blur-xl">
+                  <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-2xl bg-[#050B16]">
+                    <Sparkles size={24} className="text-[#E8C766]" />
+                  </div>
+                  <p className="text-[13.5px] font-medium leading-relaxed text-[#050B16]/70">
+                    Importez un ou plusieurs documents à gauche,
+                    <br />
+                    puis cliquez sur « Démarrer l'analyse ».
+                  </p>
+                </div>
               </div>
-            </div>
-          )}
+            )}
 
-          {step1 && !step2 && (
-            <Step1Panel
-              data={step1}
-              editedFields={editedFields}
-              onFieldChange={handleFieldChange}
-              onValidate={handleValidate}
-              analyzing={analyzing}
-            />
-          )}
+            {extracting && !step1 && (
+              <div className="grid h-full place-items-center text-center">
+                <div className="rounded-3xl border border-[#050B16]/8 bg-white/70 p-8 backdrop-blur-xl">
+                  <Loader2 size={28} className="mx-auto mb-3 animate-spin text-[#E8C766]" />
+                  <p className="text-[13px] font-medium text-[#050B16]/70">
+                    Lecture et extraction des champs…
+                  </p>
+                </div>
+              </div>
+            )}
 
-          {step2 && <Step2Panel data={step2} contractContext={contractContext} />}
+            {step1 && !step2 && (
+              <Step1Panel
+                data={step1}
+                editedFields={editedFields}
+                onFieldChange={handleFieldChange}
+                onValidate={handleValidate}
+                analyzing={analyzing}
+              />
+            )}
+
+            {step2 && <Step2Panel data={step2} contractContext={contractContext} />}
+          </div>
         </div>
       </main>
 
-      {/* Footer — Dashboard style */}
       <Footer />
     </div>
   );

@@ -1,14 +1,7 @@
 // frontend-v2/src/routes/Dashboard.jsx
 import { Link, useNavigate } from "react-router-dom";
 import { motion, useReducedMotion } from "framer-motion";
-import {
-  ArrowRight,
-  Scale,
-  LogOut,
-  FileText,
-  Route,
-  Gavel,
-} from "lucide-react";
+import { ArrowRight, Scale, LogOut, FileText, Route } from "lucide-react";
 import { useAuth } from "../context/AuthContext.jsx";
 
 import heroBg from "../assets/hero.jpg";
@@ -16,7 +9,7 @@ import heroBg from "../assets/hero.jpg";
 const EASE = [0.22, 1, 0.36, 1];
 
 /* -------------------------------------------------------------------------- */
-/*  Parcours — texte court                                                    */
+/*  Parcours — 2 étapes                                                       */
 /* -------------------------------------------------------------------------- */
 const STEPS = [
   {
@@ -35,19 +28,8 @@ const STEPS = [
     icon: Route,
     tag: "Procédure",
   },
-  {
-    step: "3",
-    to: "/features/dispute",
-    title: "Votre litige",
-    desc: "Préparez votre dossier et demandez une médiation.",
-    icon: Gavel,
-    tag: "Litige",
-  },
 ];
 
-/* -------------------------------------------------------------------------- */
-/*  Page                                                                      */
-/* -------------------------------------------------------------------------- */
 export default function Dashboard() {
   const { logout } = useAuth();
   const navigate = useNavigate();
@@ -64,20 +46,13 @@ export default function Dashboard() {
 
   return (
     <main className="relative flex min-h-screen w-full flex-col overflow-hidden font-['Inter',system-ui,sans-serif] text-[#F7F3EA] antialiased">
-      {/* Image de fond */}
       <div className="absolute inset-0">
-        <img
-          src={heroBg}
-          alt=""
-          aria-hidden
-          className="h-full w-full object-cover"
-        />
+        <img src={heroBg} alt="" aria-hidden className="h-full w-full object-cover" />
       </div>
 
       <div className="absolute inset-0 bg-[#050B16]/25" />
       <div className="absolute inset-0 bg-gradient-to-b from-[#050B16]/45 via-[#050B16]/10 to-[#050B16]/65" />
 
-      {/* Décor */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute inset-0 opacity-[0.10] [background-image:linear-gradient(to_right,rgba(247,243,234,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(247,243,234,0.08)_1px,transparent_1px)] [background-size:56px_56px] [mask-image:radial-gradient(80%_60%_at_50%_40%,black,transparent_25%)]" />
         <motion.div
@@ -94,7 +69,6 @@ export default function Dashboard() {
         />
       </div>
 
-      {/* Navbar */}
       <motion.header
         initial={{ y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -122,9 +96,7 @@ export default function Dashboard() {
         </div>
       </motion.header>
 
-      {/* Contenu */}
       <section className="relative z-10 mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-6 pb-16 pt-6 lg:px-10">
-        {/* Titre simple */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -139,15 +111,14 @@ export default function Dashboard() {
           </p>
         </motion.div>
 
-        {/* Cartes */}
-        <div className="mt-12 grid flex-1 grid-cols-1 gap-6 md:grid-cols-3 lg:min-h-[360px]">
+        {/* 2 cartes, centrées */}
+        <div className="mx-auto mt-12 grid w-full max-w-3xl flex-1 grid-cols-1 gap-6 md:grid-cols-2 lg:min-h-[360px]">
           {STEPS.map((s, i) => (
             <StepCard key={s.to} step={s} delay={0.2 + i * 0.12} />
           ))}
         </div>
       </section>
 
-      {/* Footer */}
       <motion.footer
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
@@ -158,18 +129,11 @@ export default function Dashboard() {
           <p className="text-[12px] font-medium text-[#F7F3EA]/70">
             © {new Date().getFullYear()} Dalil
           </p>
-
           <div className="flex items-center gap-6">
-            <a
-              href="#"
-              className="text-[12px] font-medium text-[#F7F3EA]/60 transition-colors hover:text-[#E8C766]"
-            >
+            <a href="#" className="text-[12px] font-medium text-[#F7F3EA]/60 transition-colors hover:text-[#E8C766]">
               Aide
             </a>
-            <a
-              href="#"
-              className="text-[12px] font-medium text-[#F7F3EA]/60 transition-colors hover:text-[#E8C766]"
-            >
+            <a href="#" className="text-[12px] font-medium text-[#F7F3EA]/60 transition-colors hover:text-[#E8C766]">
               Contact
             </a>
           </div>
@@ -179,9 +143,6 @@ export default function Dashboard() {
   );
 }
 
-/* -------------------------------------------------------------------------- */
-/*  Carte — style épuré                                                       */
-/* -------------------------------------------------------------------------- */
 function StepCard({ step, delay = 0 }) {
   const reduced = useReducedMotion();
   const { to, title, desc, icon: Icon, tag, step: number } = step;
@@ -203,26 +164,19 @@ function StepCard({ step, delay = 0 }) {
             "0 10px 30px -10px rgba(0,0,0,0.6), inset 0 1px 0 rgba(247,243,234,0.10)",
         }}
       >
-        {/* Réflexions verre */}
         <div className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-br from-[#F7F3EA]/[0.08] via-transparent to-transparent" />
         <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-[45%] rounded-b-3xl bg-gradient-to-t from-[#E8C766]/[0.10] to-transparent" />
 
-        {/* Tag */}
         <span className="relative rounded-full border border-[#F7F3EA]/20 bg-[#F7F3EA]/10 px-3 py-1 font-mono text-[9px] font-semibold uppercase tracking-[0.22em] text-[#F7F3EA]/80 backdrop-blur-md">
           {tag}
         </span>
 
-        {/* Grande icône centrale */}
         <div className="relative flex flex-1 flex-col items-center justify-center">
           <div className="relative">
-            {/* Halo doré derrière l'icône */}
             <div className="absolute inset-0 -z-10 rounded-full bg-[#E8C766]/25 blur-2xl transition-opacity duration-500 group-hover:opacity-100 opacity-70" />
-
             <span className="grid h-24 w-24 place-items-center rounded-full border-2 border-[#E8C766]/40 bg-[#050B16]/60 text-[#E8C766] backdrop-blur-md transition-all duration-300 group-hover:border-[#E8C766]/80 group-hover:scale-105 group-hover:shadow-[0_0_40px_rgba(232,199,102,0.5)]">
               <Icon size={38} strokeWidth={1.8} />
             </span>
-
-            {/* Numéro de carte */}
             <span className="absolute -right-2 -top-2 grid h-8 w-8 place-items-center rounded-full border border-[#E8C766]/50 bg-[#050B16] font-mono text-sm font-bold text-[#E8C766]">
               {number}
             </span>
@@ -236,16 +190,11 @@ function StepCard({ step, delay = 0 }) {
           </p>
         </div>
 
-        {/* CTA */}
         <span className="relative mt-6 inline-flex items-center gap-2 rounded-full border border-[#E8C766]/40 bg-[#E8C766]/10 px-5 py-2 text-[12.5px] font-bold tracking-wide text-[#E8C766] transition-all duration-300 group-hover:border-[#E8C766]/70 group-hover:bg-[#E8C766]/20 group-hover:gap-3">
           Ouvrir
-          <ArrowRight
-            size={14}
-            className="transition-transform duration-300 group-hover:translate-x-1"
-          />
+          <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
         </span>
 
-        {/* Liseré doré au survol */}
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[2px] origin-left scale-x-0 bg-gradient-to-r from-[#E8C766] via-[#FFF3C4] to-transparent transition-transform duration-500 group-hover:scale-x-100" />
       </Link>
     </motion.div>

@@ -1,6 +1,6 @@
 // frontend-v2/src/routes/index.tsx
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import {
   motion,
   useScroll,
@@ -21,16 +21,10 @@ import {
 import AuthModal from "../components/AuthModal.jsx";
 import heroBg from "../assets/hero.jpg";
 
-/* -------------------------------------------------------------------------- */
-/*  Jetons de design                                                          */
-/* -------------------------------------------------------------------------- */
 const INK = "#050B16";
 const CREAM = "#F7F3EA";
 const GOLD = "#E8C766";
 
-/* -------------------------------------------------------------------------- */
-/*  Primitives d'animation                                                    */
-/* -------------------------------------------------------------------------- */
 const EASE = [0.22, 1, 0.36, 1];
 
 const riseIn = {
@@ -67,9 +61,6 @@ function ShiningText({ children }) {
   );
 }
 
-/* -------------------------------------------------------------------------- */
-/*  Page                                                                      */
-/* -------------------------------------------------------------------------- */
 export default function Landing() {
   const [modal, setModal] = useState({ open: false, mode: "login" });
 
@@ -90,9 +81,6 @@ export default function Landing() {
   );
 }
 
-/* -------------------------------------------------------------------------- */
-/*  Barre de progression dorée (décorative)                                   */
-/* -------------------------------------------------------------------------- */
 function ScrollProgress() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -109,9 +97,6 @@ function ScrollProgress() {
   );
 }
 
-/* -------------------------------------------------------------------------- */
-/*  Navigation                                                                */
-/* -------------------------------------------------------------------------- */
 function Nav({ onOpen }) {
   return (
     <motion.header
@@ -131,22 +116,13 @@ function Nav({ onOpen }) {
         </a>
 
         <div className="hidden items-center gap-1 md:flex">
-          <a
-            href="#features"
-            className="rounded-full px-4 py-2 text-sm font-medium text-[#F7F3EA]/80 transition hover:bg-[#F7F3EA]/10 hover:text-[#F7F3EA]"
-          >
+          <a href="#features" className="rounded-full px-4 py-2 text-sm font-medium text-[#F7F3EA]/80 transition hover:bg-[#F7F3EA]/10 hover:text-[#F7F3EA]">
             Fonctionnalités
           </a>
-          <a
-            href="#how"
-            className="rounded-full px-4 py-2 text-sm font-medium text-[#F7F3EA]/80 transition hover:bg-[#F7F3EA]/10 hover:text-[#F7F3EA]"
-          >
+          <a href="#how" className="rounded-full px-4 py-2 text-sm font-medium text-[#F7F3EA]/80 transition hover:bg-[#F7F3EA]/10 hover:text-[#F7F3EA]">
             Fonctionnement
           </a>
-          <a
-            href="#about"
-            className="rounded-full px-4 py-2 text-sm font-medium text-[#F7F3EA]/80 transition hover:bg-[#F7F3EA]/10 hover:text-[#F7F3EA]"
-          >
+          <a href="#about" className="rounded-full px-4 py-2 text-sm font-medium text-[#F7F3EA]/80 transition hover:bg-[#F7F3EA]/10 hover:text-[#F7F3EA]">
             À propos
           </a>
         </div>
@@ -164,9 +140,6 @@ function Nav({ onOpen }) {
   );
 }
 
-/* -------------------------------------------------------------------------- */
-/*  Hero — tient dans un seul écran, sans défilement                          */
-/* -------------------------------------------------------------------------- */
 function Hero({ onOpen }) {
   const reduced = useReducedMotion();
   const sectionRef = useRef(null);
@@ -188,12 +161,7 @@ function Hero({ onOpen }) {
         style={reduced ? undefined : { scale: bgScale, y: bgY }}
         className="absolute inset-0"
       >
-        <img
-          src={heroBg}
-          alt=""
-          aria-hidden
-          className="h-full w-full object-cover"
-        />
+        <img src={heroBg} alt="" aria-hidden className="h-full w-full object-cover" />
       </motion.div>
 
       <div className="absolute inset-0 bg-[#050B16]/30" />
@@ -216,9 +184,9 @@ function Hero({ onOpen }) {
             variants={riseIn}
             className="mt-6 text-[2.5rem] font-bold leading-[1.05] tracking-[-0.03em] text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.6)] sm:text-6xl lg:text-[4.25rem]"
           >
-            <span className="sr-only">Réglez vos litiges commerciaux, sans papier.</span>
+            <span className="sr-only">Maîtrisez vos contrats commerciaux, sans papier.</span>
             <span aria-hidden className="flex flex-wrap justify-center gap-x-[0.28em]">
-              <span>Réglez vos litiges commerciaux,</span>
+              <span>Maîtrisez vos contrats commerciaux,</span>
               <ShiningText>sans papier.</ShiningText>
             </span>
           </motion.h1>
@@ -227,9 +195,8 @@ function Hero({ onOpen }) {
             variants={riseIn}
             className="mx-auto mt-5 max-w-2xl text-base font-medium leading-relaxed text-[#F7F3EA] drop-shadow-[0_2px_12px_rgba(0,0,0,0.7)] sm:text-lg"
           >
-            Dalil accompagne les PME à chaque étape de leurs litiges commerciaux :
-            comprendre un contrat, suivre la bonne procédure et résoudre le
-            différend — sans paperasse ni jargon juridique.
+            Dalil aide les PME à comprendre leurs contrats et à suivre la bonne
+            procédure, étape par étape — sans paperasse ni jargon juridique.
           </motion.p>
 
           <motion.div
@@ -241,10 +208,7 @@ function Hero({ onOpen }) {
               className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#E8C766] px-8 py-3.5 text-sm font-bold tracking-wide text-[#050B16] shadow-[0_10px_40px_-8px_rgba(232,199,102,0.8)] transition-all duration-300 hover:bg-[#F0D488] hover:shadow-[0_10px_50px_-8px_rgba(232,199,102,1)] sm:w-auto"
             >
               Commencer
-              <ArrowRight
-                size={16}
-                className="transition-transform duration-300 group-hover:translate-x-1"
-              />
+              <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
             </button>
 
             <button
@@ -255,11 +219,11 @@ function Hero({ onOpen }) {
             </button>
           </motion.div>
 
-          {/* Les 3 fonctionnalités */}
+          {/* 2 fonctionnalités */}
           <motion.div
             id="features"
             variants={riseIn}
-            className="mt-12 grid w-full grid-cols-1 gap-4 sm:grid-cols-3"
+            className="mx-auto mt-12 grid w-full max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2"
           >
             <MiniCard
               icon={<FileText size={18} />}
@@ -273,12 +237,6 @@ function Hero({ onOpen }) {
               copy="Dalil vous guide pas à pas dans les démarches juridiques : quoi faire, dans quel ordre, et avant quelle échéance."
               delay={0.2}
             />
-            <MiniCard
-              icon={<Gavel size={18} />}
-              title="Résolution des litiges"
-              copy="Pour les trois types de litiges — dont le manquement contractuel — Dalil génère les mises en demeure et constitue le dossier de preuves."
-              delay={0.3}
-            />
           </motion.div>
         </motion.div>
       </div>
@@ -286,9 +244,6 @@ function Hero({ onOpen }) {
   );
 }
 
-/* -------------------------------------------------------------------------- */
-/*  Carte compacte                                                            */
-/* -------------------------------------------------------------------------- */
 function MiniCard({ icon, title, copy, delay = 0 }) {
   const reduced = useReducedMotion();
 
@@ -321,9 +276,6 @@ function MiniCard({ icon, title, copy, delay = 0 }) {
   );
 }
 
-/* -------------------------------------------------------------------------- */
-/*  Barre de pied de page avec accès agent                                    */
-/* -------------------------------------------------------------------------- */
 function Footer({ onOpen }) {
   return (
     <motion.footer
@@ -350,9 +302,6 @@ function Footer({ onOpen }) {
   );
 }
 
-/* -------------------------------------------------------------------------- */
-/*  Décorations du hero                                                       */
-/* -------------------------------------------------------------------------- */
 function GridOverlay() {
   const reduced = useReducedMotion();
   return (
@@ -371,21 +320,13 @@ function Aurora() {
     <>
       <motion.div
         aria-hidden
-        animate={
-          reduced
-            ? undefined
-            : { x: [0, 20, -20, 0], y: [0, -30, 20, 0], scale: [1, 1.12, 0.96, 1] }
-        }
+        animate={reduced ? undefined : { x: [0, 20, -20, 0], y: [0, -30, 20, 0], scale: [1, 1.12, 0.96, 1] }}
         transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
         className="pointer-events-none absolute -left-40 -top-52 h-[520px] w-[520px] rounded-full bg-[#E8C766]/[0.10] blur-[160px]"
       />
       <motion.div
         aria-hidden
-        animate={
-          reduced
-            ? undefined
-            : { x: [0, -50, 25, 0], y: [0, 25, -20, 0], scale: [1, 0.94, 1.1, 1] }
-        }
+        animate={reduced ? undefined : { x: [0, -50, 25, 0], y: [0, 25, -20, 0], scale: [1, 0.94, 1.1, 1] }}
         transition={{ duration: 26, repeat: Infinity, ease: "easeInOut" }}
         className="pointer-events-none absolute -bottom-56 -right-44 h-[520px] w-[520px] rounded-full bg-[#F7F3EA]/[0.06] blur-[160px]"
       />
