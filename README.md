@@ -486,8 +486,6 @@ Chaque article dans le RAG est indexé sous plusieurs sections : `summary`, `con
 - **Langue de sortie** — Contract Understanding répond uniquement en français, quelle que soit la langue de la question. L'OCR en revanche préserve la langue d'origine du document (FR ou AR).
 
 ---
-
-## Licence
 ## 🏆 Contexte — Hack4Justice 2026 (Track B)
  
 Ce projet est une **solution proposée dans le cadre du **Hack4Justice**, organisé par **HiiL (Hague Institute for Innovation of Law)**, pour sa **4ème édition**, sur le **Challenge B — Digital Dispute Resolution & Pre-Litigation**.
