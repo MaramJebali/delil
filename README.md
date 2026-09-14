@@ -140,7 +140,7 @@ Delil/
 │           │   └── loi_77_37.json
 │           └── chroma_db/          # ⚠️ NON versionné — régénéré par `rag build`
 │
-└── frontend-v2/
+└── frontend/
     ├── package.json
     ├── vite.config.js
     ├── tailwind.config.js
@@ -306,11 +306,11 @@ Contient un embedding par (article × section × langue).
 - **Sections :** `summary`, `conditions`, `consequences`, `delais`, `keywords`, `related`
 - **Langues :** `fr`, `ar`
 
-### `frontend-v2/src/assets/hero.jpg`
+### `frontend/src/assets/hero.jpg`
 
 Image de fond du Dashboard. Fournir un JPG de ~2000×1200 min.
 
-### `frontend-v2/src/assets/logo.png`
+### `frontend/src/assets/logo.png`
 
 Logo de l'application, utilisé dans ce README et dans l'en-tête du Dashboard.
 
@@ -347,7 +347,7 @@ Backend disponible sur `http://127.0.0.1:8000/`
 ### 2. Frontend
 
 ```bash
-cd frontend-v2
+cd frontend
 npm install
 npm run dev
 ```
@@ -488,5 +488,12 @@ Chaque article dans le RAG est indexé sous plusieurs sections : `summary`, `con
 ---
 
 ## Licence
-
-Projet interne — Orange Tunisia / Dalil.
+## 🏆 Contexte — Hack4Justice 2026 (Track B)
+ 
+Ce projet est une **solution proposée dans le cadre du **Hack4Justice**, organisé par **HiiL (Hague Institute for Innovation of Law)**, pour sa **4ème édition**, sur le **Challenge B — Digital Dispute Resolution & Pre-Litigation**.
+ 
+ 
+Le **Challenge B** porte spécifiquement sur la résolution digitale des litiges et la pré-contentieux : aider les mSME à collecter des preuves, automatiser les mises en demeure, et constituer des dossiers de réclamation structurés pour une résolution rapide via médiation numérique ou traitement judiciaire accéléré — avec un module institutionnel obligatoire destiné aux greffiers, médiateurs ou arbitres.
+ 
+---
+Projet interne — Tunisia / Dalil.
